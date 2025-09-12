@@ -1,6 +1,6 @@
 ## Senior Project
 --------------------
-This is private back up repository for Senior project
+This is private back up repository for Senior project. 
 
 ## Installation
 --------------------
@@ -23,8 +23,8 @@ python3 detect.py --weights best_v<version_number>.pt --source 0
 ## Documentation  
 --------------------
  
-Initial version is best.pt_v0
-best.pt_v1 is the version with --epoch 200 and freeze 10
+Initial version is best.pt_v0.
+best.pt_v1 is the version with --epoch 200 and freeze 10.
 
 For the yolov8n:
 
