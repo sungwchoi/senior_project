@@ -1,0 +1,102 @@
+일단 먼저 
+
+ubuntu 22.04 를 설치를 했어. > 최근 패키지와 무엇보다 ROS 1 은 이제 지원이 종료 되었기 때문
+ROS2 humble 을 다운했고 
+
+Object detection 으로는 지금 yolov8n 을 사용할 생각 (YOLOv4-tiny보다 더 정확하면서도 CPU 추론 속도가 더 빠릅니다. 엣지 디바이스(CPU 기반 소형 장치)를 위해 태어난 최신 경량 모델)
+
+- 1단계: Ultralytics YOLOv8 라이브러리 설치
+YOLOv8 핵심 라이브러리 설치 
+pip install ultralytics
+ 
+- 2단계: ROS 2 YOLOv8 패키지 설치
+ROS2 YOLOv8 패키지 설치 및 클론 그리고 빌드
+git clone https://github.com/mgonzs13/yolov8_ros.git # src directory 안에서 
+
+rosdep install -i --from-path src -y # 워크스페이스 제일 위에서 
+colcon build --symlink-install
+
+-3단계: 모델 준비 (ONNX로 변환하여 성능 극대화)
+Python 셸에서 ONNX로 모델 변환 
+
+from ultralytics import YOLO
+
+# YOLOv8 nano 모델 로드
+model = YOLO('yolov8n.pt')
+
+# ONNX 형식으로 변환하여 저장 (CPU 최적화)
+model.export(format='onnx')
+
+# exit() 로 파이썬 종료
+
+
+4단계: 실행 (Launch) 
+
+yolo_bringup/launch 에서 yolov8.launch.py 파일을 수정 해줌 
+기존 거는 # 으로 주석 처리하고 똑같은 문장을 아래나 위에 다시 작성함
+
+순으로 진행중
+
+
+
+
+*************** 실행 순서 *****************
+
+yasric@yasric-Alpha:~/senior_project$ ros2 run usb_cam usb_cam_node_exe
+ 
+yasric@yasric-Alpha:~/senior_project$ ros2 launch yolov8_bringup yolov8.launch.py
+ 
+rviz2 
+
+source ~/senior/install/setup.bash
+
+
+
+
+
+
+
+
+지금 Object detection 으로 ROS2 humble 이랑 webcam 조합으로 시도를 했었음. 그러나 YOLOv8n YOLOv5n 
+다 박살나고 오류 ㅈㄴ 남. 특히 ROS 병합할 때 rqt_graph 에서 YOLOv8n 노드가 camera/image/raw 데이타를 아예
+구독하지를 못했음. 그래서 rviz2 에서도 웹캠은 정상적으로 나왔지만 YOLO 가 작동을 안했었음. 
+
+그래서 어떻게든 ROS2 랑 병합해보려고 docker 도 시도해보고 진짜 개 별 일들을 다 했는데 결국에 안됨... 
+
+>>>>>>>> 그래서 결론은 그냥 
+1. https://github.com/ultralytics/yolov5 여기 gitclone 함. 
+ 
+cd ~/senior_project
+git clone https://github.com/ultralytics/yolov5
+
+2. 그리고 필수라이브러리 설치 함. 
+
+cd yolov5
+pip install -r requirements.txt numpy==1.24.4 
+
+3. 그리고 implementation 
+
+python3 detect.py --weights yolov5n.pt --source 0 
+
+python3 detect.py --weights best.pt --source 0 
+
+현재 초기 버전은 best.pt_v0 이고 --epoch 200 과 freeze 10 으로 돌린 거가 best.pt_v1
+
+
+yolov8n 을 하고 싶으면 
+~/senior_project 안에서 
+python3 detect_v8.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
