@@ -1,0 +1,1 @@
+/home/yasric/senior_project/build/obstacle_detector/rosidl_generator_c/obstacle_detector/msg/detail/circle_obstacle__struct.h

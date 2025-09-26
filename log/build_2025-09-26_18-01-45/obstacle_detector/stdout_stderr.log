@@ -1,0 +1,411 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1") found components: C 
+-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+-- Found utf8cpp: /usr/include/utf8cpp  
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.25
+-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0m** WARNING ** io features related to pcap will be disabled[0m
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- looking for PCL_2D
+-- Found PCL_2D: /usr/include/pcl-1.12  
+-- looking for PCL_GEOMETRY
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+-- looking for PCL_IO
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- looking for PCL_FEATURES
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- looking for PCL_ML
+-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+-- looking for PCL_SEGMENTATION
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- looking for PCL_VISUALIZATION
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- looking for PCL_SURFACE
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- looking for PCL_REGISTRATION
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- looking for PCL_KEYPOINTS
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- looking for PCL_TRACKING
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- looking for PCL_RECOGNITION
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- looking for PCL_STEREO
+-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+-- looking for PCL_APPS
+-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+-- looking for PCL_IN_HAND_SCANNER
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+-- looking for PCL_MODELER
+-- Found PCL_MODELER: /usr/include/pcl-1.12  
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+-- looking for PCL_OUTOFCORE
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- looking for PCL_PEOPLE
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Found Armadillo: /usr/include (found version "10.8.2") 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.54.0") found components: system 
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yasric/senior_project/build/obstacle_detector
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] [32mBuilding CXX object CMakeFiles/ground_filter_node.dir/src/nodes/ground_filter_node.cpp.o[0m
+[  4%] Built target ament_cmake_python_symlink_obstacle_detector
+running egg_info
+creating obstacle_detector.egg-info
+writing obstacle_detector.egg-info/PKG-INFO
+writing dependency_links to obstacle_detector.egg-info/dependency_links.txt
+writing top-level names to obstacle_detector.egg-info/top_level.txt
+writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+reading manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+[  4%] Built target ament_cmake_python_build_obstacle_detector_egg
+[  4%] Built target obstacle_detector__cpp
+[  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  9%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/circle_obstacle__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/obstacles__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/segment_obstacle__functions.c.o[0m
+[ 14%] [32m[1mLinking C shared library libobstacle_detector__rosidl_generator_c.so[0m
+[ 14%] Built target obstacle_detector__rosidl_generator_c
+[ 16%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/circle_obstacle__type_support.cpp.o[0m
+[ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/circle_obstacle__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/obstacles__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/obstacles__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/segment_obstacle__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/circle_obstacle__type_support.cpp.o[0m
+[ 27%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_cpp.so[0m
+[ 27%] Built target obstacle_detector__rosidl_typesupport_cpp
+[ 29%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/segment_obstacle__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/obstacles__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/segment_obstacle__type_support.cpp.o[0m
+[ 34%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 34%] Built target obstacle_detector__rosidl_typesupport_fastrtps_cpp
+[ 36%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 37%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 39%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_introspection_cpp.so[0m
+[ 39%] Built target obstacle_detector__rosidl_typesupport_introspection_cpp
+[ 40%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/circle_obstacle__type_support_c.cpp.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/circle_obstacle__type_support.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/obstacles__type_support.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/segment_obstacle__type_support.c.o[0m
+[ 50%] [32m[1mLinking C shared library libobstacle_detector__rosidl_typesupport_introspection_c.so[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/circle_obstacle__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/obstacles__type_support.cpp.o[0m
+[ 52%] Built target obstacle_detector__rosidl_typesupport_introspection_c
+[ 54%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/obstacles__type_support_c.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/segment_obstacle__type_support.cpp.o[0m
+[ 57%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_c.so[0m
+[ 57%] Built target obstacle_detector__rosidl_typesupport_c
+[ 59%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/segment_obstacle__type_support_c.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/obstacle_extractor.dir/src/obstacle_extractor.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/obstacle_tracker.dir/src/obstacle_tracker.cpp.o[0m
+[ 63%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_c.so[0m
+[ 63%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c
+[ 65%] [32mBuilding CXX object CMakeFiles/obstacle_publisher.dir/src/obstacle_publisher.cpp.o[0m
+[ 67%] [32m[1mLinking CXX shared library libobstacle_publisher.so[0m
+[ 67%] Built target obstacle_publisher
+[ 67%] Built target obstacle_detector
+[ 68%] [32mBuilding CXX object CMakeFiles/obstacle_publisher_node.dir/src/nodes/obstacle_publisher_node.cpp.o[0m
+[ 70%] [32m[1mLinking CXX executable obstacle_publisher_node[0m
+[ 72%] [32m[1mLinking CXX executable ground_filter_node[0m
+[ 72%] Built target obstacle_publisher_node
+[ 73%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 73%] Built target ground_filter_node
+[ 73%] Built target obstacle_detector__py
+[ 77%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_obstacles_s.c.o[0m
+[ 77%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_circle_obstacle_s.c.o[0m
+[ 78%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_segment_obstacle_s.c.o[0m
+[ 80%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/libobstacle_detector__rosidl_generator_py.so[0m
+[ 80%] Built target obstacle_detector__rosidl_generator_py
+[ 81%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 85%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 86%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 86%] Built target obstacle_detector__rosidl_typesupport_introspection_c__pyext
+[ 86%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c__pyext
+[ 88%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c.o[0m
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 90%] Built target obstacle_detector__rosidl_typesupport_c__pyext
+[ 91%] [32m[1mLinking CXX shared library libobstacle_tracker.so[0m
+[ 91%] Built target obstacle_tracker
+[ 93%] [32mBuilding CXX object CMakeFiles/obstacle_tracker_node.dir/src/nodes/obstacle_tracker_node.cpp.o[0m
+[ 95%] [32m[1mLinking CXX shared library libobstacle_extractor.so[0m
+[ 95%] Built target obstacle_extractor
+[ 96%] [32mBuilding CXX object CMakeFiles/obstacle_extractor_node.dir/src/nodes/obstacle_extractor_node.cpp.o[0m
+[ 98%] [32m[1mLinking CXX executable obstacle_tracker_node[0m
+[100%] [32m[1mLinking CXX executable obstacle_extractor_node[0m
+[100%] Built target obstacle_tracker_node
+[100%] Built target obstacle_extractor_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/rosidl_interfaces/obstacle_detector
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__functions.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__functions.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__functions.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.sh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__builder.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__traits.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__builder.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__traits.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__builder.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__traits.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.sh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/libobstacle_detector__rosidl_generator_py.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle_s.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles_s.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle_s.c
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.idl
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.idl
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.idl
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.msg
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.msg
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.msg
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/ground_filter_node
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_extractor.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_tracker.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_publisher.so
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_extractor_node
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_tracker_node
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_publisher_node
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/bringup_all.launch.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/demo.launch
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/filter_and_detect.launch.py
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/nodes.launch
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_detector_with_ground_filter.launch.xml
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor.launch
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor_and_tracker.launch
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_publisher.launch
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/package_run_dependencies/obstacle_detector
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/parent_prefix_path/obstacle_detector
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.sh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.sh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.bash
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.sh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.zsh
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.dsv
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/packages/obstacle_detector
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig-version.cmake
+-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.xml
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so" to ""
+Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector'...
+Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py'...
+Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg'...
+Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py'...
+Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py'...
+Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py'...
+Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py'...
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so
+-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so" to ""
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cppExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport.cmake
+-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport-noconfig.cmake

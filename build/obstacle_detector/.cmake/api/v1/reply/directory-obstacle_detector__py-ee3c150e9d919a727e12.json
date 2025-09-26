@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "obstacle_detector__py",
+		"source" : "/home/yasric/senior_project/build/obstacle_detector/obstacle_detector__py"
+	}
+}

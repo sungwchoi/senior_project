@@ -1,0 +1,1064 @@
+[0.000000] (-) TimerEvent: {}
+[0.000548] (obstacle_detector) JobQueued: {'identifier': 'obstacle_detector', 'dependencies': OrderedDict()}
+[0.000900] (obstacle_detector) JobStarted: {'identifier': 'obstacle_detector'}
+[0.010709] (obstacle_detector) JobProgress: {'identifier': 'obstacle_detector', 'progress': 'cmake'}
+[0.011747] (obstacle_detector) Command: {'cmd': ['/usr/bin/cmake', '/home/yasric/senior_project/src/obstacle_detector_2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/yasric/senior_project/install/obstacle_detector'], 'cwd': '/home/yasric/senior_project/build/obstacle_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yasric'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yasric/senior_project/install/obstacle_detector/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yasric'), ('OLDPWD', '/home/yasric'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1759'), ('SYSTEMD_EXEC_PID', '2095'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3027'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yasric/senior_project/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yasric'), ('JOURNAL_STREAM', '8:12217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yasric'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yasric/.local/bin:/opt/ros/humble/bin:/home/yasric/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yasric-Alpha:@/tmp/.ICE-unix/1891,unix/yasric-Alpha:/tmp/.ICE-unix/1891'), ('INVOCATION_ID', '4fffce6041be4d03af23ad43584afd37'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NPLD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1a0987b0-9540-4f26-b8d2-bd9609527514'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yasric/senior_project/build/obstacle_detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble')]), 'shell': False}
+[0.090745] (obstacle_detector) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099673] (-) TimerEvent: {}
+[0.173587] (obstacle_detector) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.183562] (obstacle_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199813] (-) TimerEvent: {}
+[0.283433] (obstacle_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.294302] (obstacle_detector) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.294887] (obstacle_detector) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.295536] (obstacle_detector) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.299754] (obstacle_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299977] (-) TimerEvent: {}
+[0.400338] (-) TimerEvent: {}
+[0.413452] (obstacle_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.424400] (obstacle_detector) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.424919] (obstacle_detector) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.425593] (obstacle_detector) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.429037] (obstacle_detector) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500440] (-) TimerEvent: {}
+[0.600852] (-) TimerEvent: {}
+[0.643296] (obstacle_detector) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.701005] (-) TimerEvent: {}
+[0.732833] (obstacle_detector) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.764134] (obstacle_detector) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.801149] (-) TimerEvent: {}
+[0.816934] (obstacle_detector) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.823032] (obstacle_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.834160] (obstacle_detector) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.851725] (obstacle_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.874220] (obstacle_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901286] (-) TimerEvent: {}
+[0.933723] (obstacle_detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.937650] (obstacle_detector) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001410] (-) TimerEvent: {}
+[1.056078] (obstacle_detector) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.092818] (obstacle_detector) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.101571] (-) TimerEvent: {}
+[1.151386] (obstacle_detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.161656] (obstacle_detector) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.201775] (-) TimerEvent: {}
+[1.264016] (obstacle_detector) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.264747] (obstacle_detector) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301895] (-) TimerEvent: {}
+[1.370043] (obstacle_detector) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.371656] (obstacle_detector) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401994] (-) TimerEvent: {}
+[1.446227] (obstacle_detector) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.466333] (obstacle_detector) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.493813] (obstacle_detector) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.502102] (-) TimerEvent: {}
+[1.519660] (obstacle_detector) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.551150] (obstacle_detector) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.566235] (obstacle_detector) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.579718] (obstacle_detector) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.602235] (-) TimerEvent: {}
+[1.702532] (-) TimerEvent: {}
+[1.709195] (obstacle_detector) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.726183] (obstacle_detector) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.728122] (obstacle_detector) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.728375] (obstacle_detector) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.732568] (obstacle_detector) StdoutLine: {'line': b'-- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)\n'}
+[1.740122] (obstacle_detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.771320] (obstacle_detector) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.789728] (obstacle_detector) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.802674] (-) TimerEvent: {}
+[1.837206] (obstacle_detector) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.837475] (obstacle_detector) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.863711] (obstacle_detector) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.885518] (obstacle_detector) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.902770] (-) TimerEvent: {}
+[1.904532] (obstacle_detector) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.961174] (obstacle_detector) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.961514] (obstacle_detector) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[2.002881] (-) TimerEvent: {}
+[2.019041] (obstacle_detector) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[2.027150] (obstacle_detector) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[2.103004] (-) TimerEvent: {}
+[2.203420] (-) TimerEvent: {}
+[2.235263] (obstacle_detector) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[2.236021] (obstacle_detector) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[2.240950] (obstacle_detector) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[2.253706] (obstacle_detector) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[2.279700] (obstacle_detector) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[2.303535] (-) TimerEvent: {}
+[2.307454] (obstacle_detector) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[2.403666] (-) TimerEvent: {}
+[2.439089] (obstacle_detector) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.439645] (obstacle_detector) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[2.503809] (-) TimerEvent: {}
+[2.544600] (obstacle_detector) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[2.544981] (obstacle_detector) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[2.603938] (-) TimerEvent: {}
+[2.644497] (obstacle_detector) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[2.644853] (obstacle_detector) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.704071] (-) TimerEvent: {}
+[2.743128] (obstacle_detector) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.743506] (obstacle_detector) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.804202] (-) TimerEvent: {}
+[2.841487] (obstacle_detector) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.841827] (obstacle_detector) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.904371] (-) TimerEvent: {}
+[2.941469] (obstacle_detector) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.941769] (obstacle_detector) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[3.004519] (-) TimerEvent: {}
+[3.040727] (obstacle_detector) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[3.104659] (-) TimerEvent: {}
+[3.157922] (obstacle_detector) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[3.161636] (obstacle_detector) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[3.165381] (obstacle_detector) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[3.168025] (obstacle_detector) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[3.204800] (-) TimerEvent: {}
+[3.209453] (obstacle_detector) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[3.216937] (obstacle_detector) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[3.223979] (obstacle_detector) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[3.233634] (obstacle_detector) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[3.304920] (-) TimerEvent: {}
+[3.358584] (obstacle_detector) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[3.379727] (obstacle_detector) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[3.405073] (-) TimerEvent: {}
+[3.433152] (obstacle_detector) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[3.435161] (obstacle_detector) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[3.435539] (obstacle_detector) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.505222] (-) TimerEvent: {}
+[3.518795] (obstacle_detector) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[3.519058] (obstacle_detector) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.519505] (obstacle_detector) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[3.605384] (-) TimerEvent: {}
+[3.705772] (-) TimerEvent: {}
+[3.740240] (obstacle_detector) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.749974] (obstacle_detector) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.759624] (obstacle_detector) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.805889] (-) TimerEvent: {}
+[3.906266] (-) TimerEvent: {}
+[3.966242] (obstacle_detector) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[4.006413] (-) TimerEvent: {}
+[4.106778] (-) TimerEvent: {}
+[4.181628] (obstacle_detector) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.206889] (-) TimerEvent: {}
+[4.307235] (-) TimerEvent: {}
+[4.394490] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[4.396636] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[4.397016] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[4.398169] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[4.398493] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[4.399607] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[4.399976] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[4.401122] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[4.401454] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[4.402728] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[4.403069] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[4.404223] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[4.404596] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[4.405028] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[4.405363] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[4.405719] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[4.406055] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[4.407187] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[4.407325] (-) TimerEvent: {}
+[4.407763] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[4.408888] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[4.409250] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[4.410324] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[4.410601] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[4.411781] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[4.412211] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[4.413356] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[4.413751] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[4.414854] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[4.415211] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[4.416484] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[4.416898] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[4.418078] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[4.418475] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[4.419752] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[4.420100] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[4.421443] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[4.422074] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[4.423222] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[4.423518] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[4.424717] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[4.425558] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[4.425994] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[4.426205] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[4.426596] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[4.426904] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[4.427529] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[4.427769] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[4.429045] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[4.429408] (obstacle_detector) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[4.430665] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[4.431918] (obstacle_detector) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[4.434300] (obstacle_detector) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[4.473401] (obstacle_detector) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[4.493433] (obstacle_detector) StdoutLine: {'line': b'-- Found Armadillo: /usr/include (found version "10.8.2") \n'}
+[4.499195] (obstacle_detector) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.54.0") found components: system \n'}
+[4.507448] (-) TimerEvent: {}
+[4.607790] (-) TimerEvent: {}
+[4.708125] (-) TimerEvent: {}
+[4.808541] (-) TimerEvent: {}
+[4.908887] (-) TimerEvent: {}
+[4.947621] (obstacle_detector) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.009002] (-) TimerEvent: {}
+[5.109308] (-) TimerEvent: {}
+[5.209746] (-) TimerEvent: {}
+[5.310087] (-) TimerEvent: {}
+[5.410420] (-) TimerEvent: {}
+[5.510764] (-) TimerEvent: {}
+[5.582108] (obstacle_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.610893] (-) TimerEvent: {}
+[5.711242] (-) TimerEvent: {}
+[5.811585] (-) TimerEvent: {}
+[5.827835] (obstacle_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.863440] (obstacle_detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.865311] (obstacle_detector) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.902826] (obstacle_detector) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.903770] (obstacle_detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.904014] (obstacle_detector) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.904195] (obstacle_detector) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.911729] (-) TimerEvent: {}
+[5.936676] (obstacle_detector) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.011846] (-) TimerEvent: {}
+[6.111088] (obstacle_detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.111924] (-) TimerEvent: {}
+[6.212305] (-) TimerEvent: {}
+[6.312830] (-) TimerEvent: {}
+[6.413341] (-) TimerEvent: {}
+[6.513843] (-) TimerEvent: {}
+[6.596763] (obstacle_detector) StdoutLine: {'line': b'-- Generating done\n'}
+[6.613935] (-) TimerEvent: {}
+[6.692414] (obstacle_detector) StdoutLine: {'line': b'-- Build files have been written to: /home/yasric/senior_project/build/obstacle_detector\n'}
+[6.714051] (-) TimerEvent: {}
+[6.725627] (obstacle_detector) CommandEnded: {'returncode': 0}
+[6.726866] (obstacle_detector) JobProgress: {'identifier': 'obstacle_detector', 'progress': 'build'}
+[6.728840] (obstacle_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yasric/senior_project/build/obstacle_detector', '--', '-j4', '-l4'], 'cwd': '/home/yasric/senior_project/build/obstacle_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yasric'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yasric/senior_project/install/obstacle_detector/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yasric'), ('OLDPWD', '/home/yasric'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1759'), ('SYSTEMD_EXEC_PID', '2095'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3027'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yasric/senior_project/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yasric'), ('JOURNAL_STREAM', '8:12217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yasric'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yasric/.local/bin:/opt/ros/humble/bin:/home/yasric/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yasric-Alpha:@/tmp/.ICE-unix/1891,unix/yasric-Alpha:/tmp/.ICE-unix/1891'), ('INVOCATION_ID', '4fffce6041be4d03af23ad43584afd37'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NPLD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1a0987b0-9540-4f26-b8d2-bd9609527514'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yasric/senior_project/build/obstacle_detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble')]), 'shell': False}
+[6.802861] (obstacle_detector) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.814177] (-) TimerEvent: {}
+[6.823679] (obstacle_detector) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.827530] (obstacle_detector) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/ground_filter_node.dir/src/nodes/ground_filter_node.cpp.o\x1b[0m\n'}
+[6.838616] (obstacle_detector) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_obstacle_detector\n'}
+[6.914296] (-) TimerEvent: {}
+[7.017768] (-) TimerEvent: {}
+[7.118225] (-) TimerEvent: {}
+[7.218661] (-) TimerEvent: {}
+[7.319134] (-) TimerEvent: {}
+[7.419701] (-) TimerEvent: {}
+[7.492762] (obstacle_detector) StdoutLine: {'line': b'running egg_info\n'}
+[7.493829] (obstacle_detector) StdoutLine: {'line': b'creating obstacle_detector.egg-info\n'}
+[7.494208] (obstacle_detector) StdoutLine: {'line': b'writing obstacle_detector.egg-info/PKG-INFO\n'}
+[7.494557] (obstacle_detector) StdoutLine: {'line': b'writing dependency_links to obstacle_detector.egg-info/dependency_links.txt\n'}
+[7.495383] (obstacle_detector) StdoutLine: {'line': b'writing top-level names to obstacle_detector.egg-info/top_level.txt\n'}
+[7.495681] (obstacle_detector) StdoutLine: {'line': b"writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'\n"}
+[7.500750] (obstacle_detector) StdoutLine: {'line': b"reading manifest file 'obstacle_detector.egg-info/SOURCES.txt'\n"}
+[7.501194] (obstacle_detector) StdoutLine: {'line': b"writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'\n"}
+[7.519771] (-) TimerEvent: {}
+[7.557450] (obstacle_detector) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_obstacle_detector_egg\n'}
+[7.619900] (-) TimerEvent: {}
+[7.720334] (-) TimerEvent: {}
+[7.820859] (-) TimerEvent: {}
+[7.921445] (-) TimerEvent: {}
+[8.021770] (-) TimerEvent: {}
+[8.078256] (obstacle_detector) StdoutLine: {'line': b'[  4%] Built target obstacle_detector__cpp\n'}
+[8.099912] (obstacle_detector) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.101477] (obstacle_detector) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.122827] (-) TimerEvent: {}
+[8.223185] (-) TimerEvent: {}
+[8.323553] (-) TimerEvent: {}
+[8.423966] (-) TimerEvent: {}
+[8.527765] (-) TimerEvent: {}
+[8.628172] (-) TimerEvent: {}
+[8.728577] (-) TimerEvent: {}
+[8.829033] (-) TimerEvent: {}
+[8.880748] (obstacle_detector) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/circle_obstacle__functions.c.o\x1b[0m\n'}
+[8.930773] (-) TimerEvent: {}
+[9.003039] (obstacle_detector) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/obstacles__functions.c.o\x1b[0m\n'}
+[9.032763] (-) TimerEvent: {}
+[9.121881] (obstacle_detector) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/segment_obstacle__functions.c.o\x1b[0m\n'}
+[9.132887] (-) TimerEvent: {}
+[9.233317] (-) TimerEvent: {}
+[9.246767] (obstacle_detector) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libobstacle_detector__rosidl_generator_c.so\x1b[0m\n'}
+[9.333480] (-) TimerEvent: {}
+[9.333944] (obstacle_detector) StdoutLine: {'line': b'[ 14%] Built target obstacle_detector__rosidl_generator_c\n'}
+[9.352662] (obstacle_detector) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/circle_obstacle__type_support.cpp.o\x1b[0m\n'}
+[9.356601] (obstacle_detector) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.434991] (-) TimerEvent: {}
+[9.537758] (-) TimerEvent: {}
+[9.585608] (obstacle_detector) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/circle_obstacle__type_support.cpp.o\x1b[0m\n'}
+[9.637873] (-) TimerEvent: {}
+[9.738280] (-) TimerEvent: {}
+[9.838682] (-) TimerEvent: {}
+[9.939088] (-) TimerEvent: {}
+[9.997904] (obstacle_detector) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/obstacles__type_support.cpp.o\x1b[0m\n'}
+[10.041782] (-) TimerEvent: {}
+[10.142242] (-) TimerEvent: {}
+[10.242720] (-) TimerEvent: {}
+[10.343122] (-) TimerEvent: {}
+[10.443558] (-) TimerEvent: {}
+[10.544022] (-) TimerEvent: {}
+[10.558100] (obstacle_detector) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/obstacles__type_support.cpp.o\x1b[0m\n'}
+[10.644132] (-) TimerEvent: {}
+[10.646806] (obstacle_detector) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/segment_obstacle__type_support.cpp.o\x1b[0m\n'}
+[10.744281] (-) TimerEvent: {}
+[10.844853] (obstacle_detector) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/circle_obstacle__type_support.cpp.o\x1b[0m\n'}
+[10.845160] (-) TimerEvent: {}
+[10.947945] (-) TimerEvent: {}
+[11.048374] (-) TimerEvent: {}
+[11.148780] (-) TimerEvent: {}
+[11.249208] (-) TimerEvent: {}
+[11.284878] (obstacle_detector) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.349343] (-) TimerEvent: {}
+[11.380663] (obstacle_detector) StdoutLine: {'line': b'[ 27%] Built target obstacle_detector__rosidl_typesupport_cpp\n'}
+[11.397060] (obstacle_detector) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/segment_obstacle__type_support.cpp.o\x1b[0m\n'}
+[11.451779] (-) TimerEvent: {}
+[11.552333] (-) TimerEvent: {}
+[11.652770] (-) TimerEvent: {}
+[11.751660] (obstacle_detector) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/obstacles__type_support.cpp.o\x1b[0m\n'}
+[11.752873] (-) TimerEvent: {}
+[11.764811] (obstacle_detector) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/segment_obstacle__type_support.cpp.o\x1b[0m\n'}
+[11.853003] (-) TimerEvent: {}
+[11.953423] (-) TimerEvent: {}
+[12.053843] (-) TimerEvent: {}
+[12.154787] (-) TimerEvent: {}
+[12.256763] (-) TimerEvent: {}
+[12.357160] (-) TimerEvent: {}
+[12.372683] (obstacle_detector) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.457283] (-) TimerEvent: {}
+[12.557709] (-) TimerEvent: {}
+[12.566261] (obstacle_detector) StdoutLine: {'line': b'[ 34%] Built target obstacle_detector__rosidl_typesupport_fastrtps_cpp\n'}
+[12.588217] (obstacle_detector) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.657772] (-) TimerEvent: {}
+[12.694885] (obstacle_detector) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.758754] (-) TimerEvent: {}
+[12.859286] (-) TimerEvent: {}
+[12.905986] (obstacle_detector) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.961757] (-) TimerEvent: {}
+[13.062145] (-) TimerEvent: {}
+[13.088904] (obstacle_detector) StdoutLine: {'line': b'[ 39%] Built target obstacle_detector__rosidl_typesupport_introspection_cpp\n'}
+[13.110843] (obstacle_detector) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.162264] (-) TimerEvent: {}
+[13.262683] (-) TimerEvent: {}
+[13.363086] (-) TimerEvent: {}
+[13.464917] (-) TimerEvent: {}
+[13.565309] (-) TimerEvent: {}
+[13.665737] (-) TimerEvent: {}
+[13.766155] (-) TimerEvent: {}
+[13.868917] (-) TimerEvent: {}
+[13.969325] (-) TimerEvent: {}
+[14.060953] (obstacle_detector) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/circle_obstacle__type_support_c.cpp.o\x1b[0m\n'}
+[14.069440] (-) TimerEvent: {}
+[14.140744] (obstacle_detector) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/circle_obstacle__type_support.c.o\x1b[0m\n'}
+[14.169571] (-) TimerEvent: {}
+[14.224777] (obstacle_detector) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/obstacles__type_support.c.o\x1b[0m\n'}
+[14.269696] (-) TimerEvent: {}
+[14.328133] (obstacle_detector) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/segment_obstacle__type_support.c.o\x1b[0m\n'}
+[14.369781] (-) TimerEvent: {}
+[14.411422] (obstacle_detector) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libobstacle_detector__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.411736] (obstacle_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/circle_obstacle__type_support.cpp.o\x1b[0m\n'}
+[14.469900] (-) TimerEvent: {}
+[14.480669] (obstacle_detector) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/obstacles__type_support.cpp.o\x1b[0m\n'}
+[14.482637] (obstacle_detector) StdoutLine: {'line': b'[ 52%] Built target obstacle_detector__rosidl_typesupport_introspection_c\n'}
+[14.506871] (obstacle_detector) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/obstacles__type_support_c.cpp.o\x1b[0m\n'}
+[14.552142] (obstacle_detector) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/segment_obstacle__type_support.cpp.o\x1b[0m\n'}
+[14.570025] (-) TimerEvent: {}
+[14.621515] (obstacle_detector) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.670156] (-) TimerEvent: {}
+[14.715368] (obstacle_detector) StdoutLine: {'line': b'[ 57%] Built target obstacle_detector__rosidl_typesupport_c\n'}
+[14.735785] (obstacle_detector) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/segment_obstacle__type_support_c.cpp.o\x1b[0m\n'}
+[14.770280] (-) TimerEvent: {}
+[14.870721] (-) TimerEvent: {}
+[14.960224] (obstacle_detector) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_extractor.dir/src/obstacle_extractor.cpp.o\x1b[0m\n'}
+[14.970825] (-) TimerEvent: {}
+[15.074772] (-) TimerEvent: {}
+[15.175194] (-) TimerEvent: {}
+[15.275758] (-) TimerEvent: {}
+[15.376145] (-) TimerEvent: {}
+[15.399816] (obstacle_detector) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_tracker.dir/src/obstacle_tracker.cpp.o\x1b[0m\n'}
+[15.476283] (-) TimerEvent: {}
+[15.576762] (-) TimerEvent: {}
+[15.632163] (obstacle_detector) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.676893] (-) TimerEvent: {}
+[15.777987] (-) TimerEvent: {}
+[15.838476] (obstacle_detector) StdoutLine: {'line': b'[ 63%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c\n'}
+[15.878130] (-) TimerEvent: {}
+[15.891177] (obstacle_detector) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_publisher.dir/src/obstacle_publisher.cpp.o\x1b[0m\n'}
+[15.978271] (-) TimerEvent: {}
+[16.078735] (-) TimerEvent: {}
+[16.179319] (-) TimerEvent: {}
+[16.280903] (-) TimerEvent: {}
+[16.381437] (-) TimerEvent: {}
+[16.483912] (-) TimerEvent: {}
+[16.584315] (-) TimerEvent: {}
+[16.684862] (-) TimerEvent: {}
+[16.785440] (-) TimerEvent: {}
+[16.888957] (-) TimerEvent: {}
+[16.989385] (-) TimerEvent: {}
+[17.089959] (-) TimerEvent: {}
+[17.190379] (-) TimerEvent: {}
+[17.292772] (-) TimerEvent: {}
+[17.393190] (-) TimerEvent: {}
+[17.493728] (-) TimerEvent: {}
+[17.594164] (-) TimerEvent: {}
+[17.697924] (-) TimerEvent: {}
+[17.798340] (-) TimerEvent: {}
+[17.898900] (-) TimerEvent: {}
+[17.999326] (-) TimerEvent: {}
+[18.099910] (-) TimerEvent: {}
+[18.200332] (-) TimerEvent: {}
+[18.300919] (-) TimerEvent: {}
+[18.403031] (-) TimerEvent: {}
+[18.503590] (-) TimerEvent: {}
+[18.604197] (-) TimerEvent: {}
+[18.704778] (-) TimerEvent: {}
+[18.805987] (-) TimerEvent: {}
+[18.908968] (-) TimerEvent: {}
+[19.009551] (-) TimerEvent: {}
+[19.109995] (-) TimerEvent: {}
+[19.211950] (-) TimerEvent: {}
+[19.312380] (-) TimerEvent: {}
+[19.412777] (-) TimerEvent: {}
+[19.513179] (-) TimerEvent: {}
+[19.615968] (-) TimerEvent: {}
+[19.716397] (-) TimerEvent: {}
+[19.816837] (-) TimerEvent: {}
+[19.917264] (-) TimerEvent: {}
+[20.017709] (-) TimerEvent: {}
+[20.118148] (-) TimerEvent: {}
+[20.219934] (-) TimerEvent: {}
+[20.320348] (-) TimerEvent: {}
+[20.420804] (-) TimerEvent: {}
+[20.522766] (-) TimerEvent: {}
+[20.623188] (-) TimerEvent: {}
+[20.723617] (-) TimerEvent: {}
+[20.824061] (-) TimerEvent: {}
+[20.924480] (-) TimerEvent: {}
+[21.027958] (-) TimerEvent: {}
+[21.128359] (-) TimerEvent: {}
+[21.228776] (-) TimerEvent: {}
+[21.329191] (-) TimerEvent: {}
+[21.429627] (-) TimerEvent: {}
+[21.530064] (-) TimerEvent: {}
+[21.630487] (-) TimerEvent: {}
+[21.730931] (-) TimerEvent: {}
+[21.833962] (-) TimerEvent: {}
+[21.934386] (-) TimerEvent: {}
+[22.034777] (-) TimerEvent: {}
+[22.135198] (-) TimerEvent: {}
+[22.235621] (-) TimerEvent: {}
+[22.336072] (-) TimerEvent: {}
+[22.436481] (-) TimerEvent: {}
+[22.539961] (-) TimerEvent: {}
+[22.640375] (-) TimerEvent: {}
+[22.740778] (-) TimerEvent: {}
+[22.841203] (-) TimerEvent: {}
+[22.941627] (-) TimerEvent: {}
+[23.042058] (-) TimerEvent: {}
+[23.142479] (-) TimerEvent: {}
+[23.242914] (-) TimerEvent: {}
+[23.343342] (-) TimerEvent: {}
+[23.445968] (-) TimerEvent: {}
+[23.546389] (-) TimerEvent: {}
+[23.646830] (-) TimerEvent: {}
+[23.747243] (-) TimerEvent: {}
+[23.847832] (-) TimerEvent: {}
+[23.950773] (-) TimerEvent: {}
+[24.051209] (-) TimerEvent: {}
+[24.151783] (-) TimerEvent: {}
+[24.252211] (-) TimerEvent: {}
+[24.352789] (-) TimerEvent: {}
+[24.454966] (-) TimerEvent: {}
+[24.555515] (-) TimerEvent: {}
+[24.656085] (-) TimerEvent: {}
+[24.757908] (-) TimerEvent: {}
+[24.858473] (-) TimerEvent: {}
+[24.959043] (-) TimerEvent: {}
+[25.059618] (-) TimerEvent: {}
+[25.161019] (-) TimerEvent: {}
+[25.261581] (-) TimerEvent: {}
+[25.364042] (-) TimerEvent: {}
+[25.464481] (-) TimerEvent: {}
+[25.564915] (-) TimerEvent: {}
+[25.665340] (-) TimerEvent: {}
+[25.768783] (-) TimerEvent: {}
+[25.869208] (-) TimerEvent: {}
+[25.969666] (-) TimerEvent: {}
+[26.070099] (-) TimerEvent: {}
+[26.170516] (-) TimerEvent: {}
+[26.271342] (-) TimerEvent: {}
+[26.371785] (-) TimerEvent: {}
+[26.472199] (-) TimerEvent: {}
+[26.572630] (-) TimerEvent: {}
+[26.675964] (-) TimerEvent: {}
+[26.776391] (-) TimerEvent: {}
+[26.876783] (-) TimerEvent: {}
+[26.977209] (-) TimerEvent: {}
+[27.073343] (obstacle_detector) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_publisher.so\x1b[0m\n'}
+[27.078809] (-) TimerEvent: {}
+[27.179238] (-) TimerEvent: {}
+[27.279669] (-) TimerEvent: {}
+[27.380123] (-) TimerEvent: {}
+[27.480567] (-) TimerEvent: {}
+[27.581016] (-) TimerEvent: {}
+[27.681438] (-) TimerEvent: {}
+[27.781873] (-) TimerEvent: {}
+[27.883955] (-) TimerEvent: {}
+[27.984417] (-) TimerEvent: {}
+[28.084875] (-) TimerEvent: {}
+[28.185316] (-) TimerEvent: {}
+[28.287970] (-) TimerEvent: {}
+[28.388558] (-) TimerEvent: {}
+[28.488987] (-) TimerEvent: {}
+[28.548866] (obstacle_detector) StdoutLine: {'line': b'[ 67%] Built target obstacle_publisher\n'}
+[28.589791] (-) TimerEvent: {}
+[28.590295] (obstacle_detector) StdoutLine: {'line': b'[ 67%] Built target obstacle_detector\n'}
+[28.638776] (obstacle_detector) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_publisher_node.dir/src/nodes/obstacle_publisher_node.cpp.o\x1b[0m\n'}
+[28.689913] (-) TimerEvent: {}
+[28.790319] (-) TimerEvent: {}
+[28.892770] (-) TimerEvent: {}
+[28.993181] (-) TimerEvent: {}
+[29.093756] (-) TimerEvent: {}
+[29.194311] (-) TimerEvent: {}
+[29.294726] (-) TimerEvent: {}
+[29.395127] (-) TimerEvent: {}
+[29.497770] (-) TimerEvent: {}
+[29.598170] (-) TimerEvent: {}
+[29.698564] (-) TimerEvent: {}
+[29.798973] (-) TimerEvent: {}
+[29.899378] (-) TimerEvent: {}
+[29.999788] (-) TimerEvent: {}
+[30.101797] (-) TimerEvent: {}
+[30.202188] (-) TimerEvent: {}
+[30.302603] (-) TimerEvent: {}
+[30.403021] (-) TimerEvent: {}
+[30.503442] (-) TimerEvent: {}
+[30.604797] (-) TimerEvent: {}
+[30.705235] (-) TimerEvent: {}
+[30.807774] (-) TimerEvent: {}
+[30.908202] (-) TimerEvent: {}
+[31.008630] (-) TimerEvent: {}
+[31.109063] (-) TimerEvent: {}
+[31.209485] (-) TimerEvent: {}
+[31.310062] (-) TimerEvent: {}
+[31.413059] (-) TimerEvent: {}
+[31.513489] (-) TimerEvent: {}
+[31.614073] (-) TimerEvent: {}
+[31.714490] (-) TimerEvent: {}
+[31.817773] (-) TimerEvent: {}
+[31.918171] (-) TimerEvent: {}
+[32.018635] (-) TimerEvent: {}
+[32.119129] (-) TimerEvent: {}
+[32.219555] (-) TimerEvent: {}
+[32.320006] (-) TimerEvent: {}
+[32.420426] (-) TimerEvent: {}
+[32.523787] (-) TimerEvent: {}
+[32.624213] (-) TimerEvent: {}
+[32.724634] (-) TimerEvent: {}
+[32.825066] (-) TimerEvent: {}
+[32.925468] (-) TimerEvent: {}
+[33.025865] (-) TimerEvent: {}
+[33.126264] (-) TimerEvent: {}
+[33.228775] (-) TimerEvent: {}
+[33.329257] (-) TimerEvent: {}
+[33.429703] (-) TimerEvent: {}
+[33.530138] (-) TimerEvent: {}
+[33.630576] (-) TimerEvent: {}
+[33.733772] (-) TimerEvent: {}
+[33.834192] (-) TimerEvent: {}
+[33.934595] (-) TimerEvent: {}
+[34.035006] (-) TimerEvent: {}
+[34.135417] (-) TimerEvent: {}
+[34.235784] (-) TimerEvent: {}
+[34.336180] (-) TimerEvent: {}
+[34.436607] (-) TimerEvent: {}
+[34.538775] (-) TimerEvent: {}
+[34.639171] (-) TimerEvent: {}
+[34.739757] (-) TimerEvent: {}
+[34.840337] (-) TimerEvent: {}
+[34.940903] (-) TimerEvent: {}
+[35.041984] (-) TimerEvent: {}
+[35.143807] (-) TimerEvent: {}
+[35.244234] (-) TimerEvent: {}
+[35.344607] (-) TimerEvent: {}
+[35.445031] (-) TimerEvent: {}
+[35.546765] (-) TimerEvent: {}
+[35.647189] (-) TimerEvent: {}
+[35.747619] (-) TimerEvent: {}
+[35.848034] (-) TimerEvent: {}
+[35.950769] (-) TimerEvent: {}
+[36.051163] (-) TimerEvent: {}
+[36.125283] (obstacle_detector) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable obstacle_publisher_node\x1b[0m\n'}
+[36.151285] (-) TimerEvent: {}
+[36.251666] (-) TimerEvent: {}
+[36.352070] (-) TimerEvent: {}
+[36.453773] (-) TimerEvent: {}
+[36.554157] (-) TimerEvent: {}
+[36.654555] (-) TimerEvent: {}
+[36.708902] (obstacle_detector) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX executable ground_filter_node\x1b[0m\n'}
+[36.755783] (-) TimerEvent: {}
+[36.856205] (-) TimerEvent: {}
+[36.956646] (-) TimerEvent: {}
+[37.059795] (-) TimerEvent: {}
+[37.160233] (-) TimerEvent: {}
+[37.203866] (obstacle_detector) StdoutLine: {'line': b'[ 72%] Built target obstacle_publisher_node\n'}
+[37.251328] (obstacle_detector) StdoutLine: {'line': b'[ 73%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[37.260344] (-) TimerEvent: {}
+[37.360759] (-) TimerEvent: {}
+[37.461182] (-) TimerEvent: {}
+[37.563778] (-) TimerEvent: {}
+[37.664219] (-) TimerEvent: {}
+[37.764656] (-) TimerEvent: {}
+[37.865101] (-) TimerEvent: {}
+[37.965487] (-) TimerEvent: {}
+[38.065876] (-) TimerEvent: {}
+[38.167791] (-) TimerEvent: {}
+[38.268164] (-) TimerEvent: {}
+[38.368550] (-) TimerEvent: {}
+[38.468990] (-) TimerEvent: {}
+[38.569937] (-) TimerEvent: {}
+[38.670361] (-) TimerEvent: {}
+[38.773949] (-) TimerEvent: {}
+[38.874347] (-) TimerEvent: {}
+[38.974765] (-) TimerEvent: {}
+[39.075184] (-) TimerEvent: {}
+[39.175603] (-) TimerEvent: {}
+[39.276958] (-) TimerEvent: {}
+[39.378941] (-) TimerEvent: {}
+[39.479344] (-) TimerEvent: {}
+[39.579753] (-) TimerEvent: {}
+[39.680154] (-) TimerEvent: {}
+[39.683932] (obstacle_detector) StdoutLine: {'line': b'[ 73%] Built target ground_filter_node\n'}
+[39.780286] (-) TimerEvent: {}
+[39.793085] (obstacle_detector) StdoutLine: {'line': b'[ 73%] Built target obstacle_detector__py\n'}
+[39.837377] (obstacle_detector) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_obstacles_s.c.o\x1b[0m\n'}
+[39.837729] (obstacle_detector) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_circle_obstacle_s.c.o\x1b[0m\n'}
+[39.881781] (-) TimerEvent: {}
+[39.982214] (-) TimerEvent: {}
+[40.082618] (-) TimerEvent: {}
+[40.098342] (obstacle_detector) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_segment_obstacle_s.c.o\x1b[0m\n'}
+[40.183773] (-) TimerEvent: {}
+[40.284180] (-) TimerEvent: {}
+[40.336234] (obstacle_detector) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/obstacle_detector/libobstacle_detector__rosidl_generator_py.so\x1b[0m\n'}
+[40.384309] (-) TimerEvent: {}
+[40.405547] (obstacle_detector) StdoutLine: {'line': b'[ 80%] Built target obstacle_detector__rosidl_generator_py\n'}
+[40.451995] (obstacle_detector) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[40.453937] (obstacle_detector) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[40.484464] (-) TimerEvent: {}
+[40.586972] (-) TimerEvent: {}
+[40.687390] (-) TimerEvent: {}
+[40.734066] (obstacle_detector) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[40.757274] (obstacle_detector) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[40.787523] (-) TimerEvent: {}
+[40.832943] (obstacle_detector) StdoutLine: {'line': b'[ 86%] Built target obstacle_detector__rosidl_typesupport_introspection_c__pyext\n'}
+[40.868776] (obstacle_detector) StdoutLine: {'line': b'[ 86%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c__pyext\n'}
+[40.875517] (obstacle_detector) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[40.887650] (-) TimerEvent: {}
+[40.988094] (-) TimerEvent: {}
+[41.052726] (obstacle_detector) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[41.088218] (-) TimerEvent: {}
+[41.117879] (obstacle_detector) StdoutLine: {'line': b'[ 90%] Built target obstacle_detector__rosidl_typesupport_c__pyext\n'}
+[41.188358] (-) TimerEvent: {}
+[41.288781] (-) TimerEvent: {}
+[41.389167] (-) TimerEvent: {}
+[41.489560] (-) TimerEvent: {}
+[41.589960] (-) TimerEvent: {}
+[41.690414] (-) TimerEvent: {}
+[41.790788] (-) TimerEvent: {}
+[41.891203] (-) TimerEvent: {}
+[41.991628] (-) TimerEvent: {}
+[42.092073] (-) TimerEvent: {}
+[42.192527] (-) TimerEvent: {}
+[42.292949] (-) TimerEvent: {}
+[42.393352] (-) TimerEvent: {}
+[42.493779] (-) TimerEvent: {}
+[42.594200] (-) TimerEvent: {}
+[42.694627] (-) TimerEvent: {}
+[42.795073] (-) TimerEvent: {}
+[42.895489] (-) TimerEvent: {}
+[42.995913] (-) TimerEvent: {}
+[43.096311] (-) TimerEvent: {}
+[43.196736] (-) TimerEvent: {}
+[43.297130] (-) TimerEvent: {}
+[43.397548] (-) TimerEvent: {}
+[43.497992] (-) TimerEvent: {}
+[43.598430] (-) TimerEvent: {}
+[43.698860] (-) TimerEvent: {}
+[43.799276] (-) TimerEvent: {}
+[43.899708] (-) TimerEvent: {}
+[44.000121] (-) TimerEvent: {}
+[44.100560] (-) TimerEvent: {}
+[44.201002] (-) TimerEvent: {}
+[44.301436] (-) TimerEvent: {}
+[44.401913] (-) TimerEvent: {}
+[44.502307] (-) TimerEvent: {}
+[44.602754] (-) TimerEvent: {}
+[44.703230] (-) TimerEvent: {}
+[44.803648] (-) TimerEvent: {}
+[44.904081] (-) TimerEvent: {}
+[45.004504] (-) TimerEvent: {}
+[45.104931] (-) TimerEvent: {}
+[45.205321] (-) TimerEvent: {}
+[45.305746] (-) TimerEvent: {}
+[45.406168] (-) TimerEvent: {}
+[45.506594] (-) TimerEvent: {}
+[45.607062] (-) TimerEvent: {}
+[45.707487] (-) TimerEvent: {}
+[45.807967] (-) TimerEvent: {}
+[45.908390] (-) TimerEvent: {}
+[46.008798] (-) TimerEvent: {}
+[46.109226] (-) TimerEvent: {}
+[46.209641] (-) TimerEvent: {}
+[46.310087] (-) TimerEvent: {}
+[46.410545] (-) TimerEvent: {}
+[46.510992] (-) TimerEvent: {}
+[46.611420] (-) TimerEvent: {}
+[46.711852] (-) TimerEvent: {}
+[46.812284] (-) TimerEvent: {}
+[46.912715] (-) TimerEvent: {}
+[47.013134] (-) TimerEvent: {}
+[47.113565] (-) TimerEvent: {}
+[47.214039] (-) TimerEvent: {}
+[47.314551] (-) TimerEvent: {}
+[47.414957] (-) TimerEvent: {}
+[47.515285] (-) TimerEvent: {}
+[47.615666] (-) TimerEvent: {}
+[47.716067] (-) TimerEvent: {}
+[47.816476] (-) TimerEvent: {}
+[47.916914] (-) TimerEvent: {}
+[48.017324] (-) TimerEvent: {}
+[48.117741] (-) TimerEvent: {}
+[48.218175] (-) TimerEvent: {}
+[48.318587] (-) TimerEvent: {}
+[48.419014] (-) TimerEvent: {}
+[48.519475] (-) TimerEvent: {}
+[48.619908] (-) TimerEvent: {}
+[48.720342] (-) TimerEvent: {}
+[48.820738] (-) TimerEvent: {}
+[48.895212] (obstacle_detector) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_tracker.so\x1b[0m\n'}
+[48.920886] (-) TimerEvent: {}
+[49.021354] (-) TimerEvent: {}
+[49.121745] (-) TimerEvent: {}
+[49.222136] (-) TimerEvent: {}
+[49.322593] (-) TimerEvent: {}
+[49.423077] (-) TimerEvent: {}
+[49.523481] (-) TimerEvent: {}
+[49.623912] (-) TimerEvent: {}
+[49.724325] (-) TimerEvent: {}
+[49.824763] (-) TimerEvent: {}
+[49.925181] (-) TimerEvent: {}
+[50.025548] (-) TimerEvent: {}
+[50.125949] (-) TimerEvent: {}
+[50.226410] (-) TimerEvent: {}
+[50.326845] (-) TimerEvent: {}
+[50.427268] (-) TimerEvent: {}
+[50.527661] (-) TimerEvent: {}
+[50.628109] (-) TimerEvent: {}
+[50.728492] (-) TimerEvent: {}
+[50.828880] (-) TimerEvent: {}
+[50.929280] (-) TimerEvent: {}
+[51.029721] (-) TimerEvent: {}
+[51.130141] (-) TimerEvent: {}
+[51.168348] (obstacle_detector) StdoutLine: {'line': b'[ 91%] Built target obstacle_tracker\n'}
+[51.199189] (obstacle_detector) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_tracker_node.dir/src/nodes/obstacle_tracker_node.cpp.o\x1b[0m\n'}
+[51.230317] (-) TimerEvent: {}
+[51.330789] (-) TimerEvent: {}
+[51.431264] (-) TimerEvent: {}
+[51.531738] (-) TimerEvent: {}
+[51.632141] (-) TimerEvent: {}
+[51.732531] (-) TimerEvent: {}
+[51.832925] (-) TimerEvent: {}
+[51.933333] (-) TimerEvent: {}
+[52.033766] (-) TimerEvent: {}
+[52.134156] (-) TimerEvent: {}
+[52.234558] (-) TimerEvent: {}
+[52.250291] (obstacle_detector) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle_extractor.so\x1b[0m\n'}
+[52.334713] (-) TimerEvent: {}
+[52.435156] (-) TimerEvent: {}
+[52.535589] (-) TimerEvent: {}
+[52.636097] (-) TimerEvent: {}
+[52.736523] (-) TimerEvent: {}
+[52.837014] (-) TimerEvent: {}
+[52.937506] (-) TimerEvent: {}
+[53.037973] (-) TimerEvent: {}
+[53.138420] (-) TimerEvent: {}
+[53.238925] (-) TimerEvent: {}
+[53.339399] (-) TimerEvent: {}
+[53.439882] (-) TimerEvent: {}
+[53.540322] (-) TimerEvent: {}
+[53.640739] (-) TimerEvent: {}
+[53.741126] (-) TimerEvent: {}
+[53.841536] (-) TimerEvent: {}
+[53.941973] (-) TimerEvent: {}
+[54.042382] (-) TimerEvent: {}
+[54.142807] (-) TimerEvent: {}
+[54.243202] (-) TimerEvent: {}
+[54.343654] (-) TimerEvent: {}
+[54.444128] (-) TimerEvent: {}
+[54.544572] (-) TimerEvent: {}
+[54.645032] (-) TimerEvent: {}
+[54.745432] (-) TimerEvent: {}
+[54.845840] (-) TimerEvent: {}
+[54.946251] (-) TimerEvent: {}
+[55.046639] (-) TimerEvent: {}
+[55.128815] (obstacle_detector) StdoutLine: {'line': b'[ 95%] Built target obstacle_extractor\n'}
+[55.146763] (-) TimerEvent: {}
+[55.160086] (obstacle_detector) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_extractor_node.dir/src/nodes/obstacle_extractor_node.cpp.o\x1b[0m\n'}
+[55.246904] (-) TimerEvent: {}
+[55.347342] (-) TimerEvent: {}
+[55.447753] (-) TimerEvent: {}
+[55.548201] (-) TimerEvent: {}
+[55.648667] (-) TimerEvent: {}
+[55.749082] (-) TimerEvent: {}
+[55.849512] (-) TimerEvent: {}
+[55.949972] (-) TimerEvent: {}
+[56.050399] (-) TimerEvent: {}
+[56.150785] (-) TimerEvent: {}
+[56.251197] (-) TimerEvent: {}
+[56.351638] (-) TimerEvent: {}
+[56.452037] (-) TimerEvent: {}
+[56.552456] (-) TimerEvent: {}
+[56.652994] (-) TimerEvent: {}
+[56.753404] (-) TimerEvent: {}
+[56.853803] (-) TimerEvent: {}
+[56.954218] (-) TimerEvent: {}
+[57.054616] (-) TimerEvent: {}
+[57.155032] (-) TimerEvent: {}
+[57.255434] (-) TimerEvent: {}
+[57.355853] (-) TimerEvent: {}
+[57.456253] (-) TimerEvent: {}
+[57.556658] (-) TimerEvent: {}
+[57.657065] (-) TimerEvent: {}
+[57.757455] (-) TimerEvent: {}
+[57.857861] (-) TimerEvent: {}
+[57.958278] (-) TimerEvent: {}
+[58.058676] (-) TimerEvent: {}
+[58.159111] (-) TimerEvent: {}
+[58.259559] (-) TimerEvent: {}
+[58.360003] (-) TimerEvent: {}
+[58.460414] (-) TimerEvent: {}
+[58.560835] (-) TimerEvent: {}
+[58.661230] (-) TimerEvent: {}
+[58.761647] (-) TimerEvent: {}
+[58.862050] (-) TimerEvent: {}
+[58.962443] (-) TimerEvent: {}
+[59.062836] (-) TimerEvent: {}
+[59.163227] (-) TimerEvent: {}
+[59.263630] (-) TimerEvent: {}
+[59.364048] (-) TimerEvent: {}
+[59.464456] (-) TimerEvent: {}
+[59.564872] (-) TimerEvent: {}
+[59.665284] (-) TimerEvent: {}
+[59.765731] (-) TimerEvent: {}
+[59.866155] (-) TimerEvent: {}
+[59.966554] (-) TimerEvent: {}
+[60.042028] (obstacle_detector) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable obstacle_tracker_node\x1b[0m\n'}
+[60.066711] (-) TimerEvent: {}
+[60.167148] (-) TimerEvent: {}
+[60.267582] (-) TimerEvent: {}
+[60.368015] (-) TimerEvent: {}
+[60.468446] (-) TimerEvent: {}
+[60.568957] (-) TimerEvent: {}
+[60.669403] (-) TimerEvent: {}
+[60.769869] (-) TimerEvent: {}
+[60.870308] (-) TimerEvent: {}
+[60.970767] (-) TimerEvent: {}
+[61.064877] (obstacle_detector) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_extractor_node\x1b[0m\n'}
+[61.070900] (-) TimerEvent: {}
+[61.171326] (-) TimerEvent: {}
+[61.271797] (-) TimerEvent: {}
+[61.372417] (-) TimerEvent: {}
+[61.472974] (-) TimerEvent: {}
+[61.556563] (obstacle_detector) StdoutLine: {'line': b'[100%] Built target obstacle_tracker_node\n'}
+[61.573111] (-) TimerEvent: {}
+[61.673588] (-) TimerEvent: {}
+[61.774082] (-) TimerEvent: {}
+[61.874549] (-) TimerEvent: {}
+[61.975010] (-) TimerEvent: {}
+[62.075431] (-) TimerEvent: {}
+[62.175838] (-) TimerEvent: {}
+[62.276288] (-) TimerEvent: {}
+[62.376736] (-) TimerEvent: {}
+[62.477121] (-) TimerEvent: {}
+[62.577552] (-) TimerEvent: {}
+[62.677990] (-) TimerEvent: {}
+[62.718017] (obstacle_detector) StdoutLine: {'line': b'[100%] Built target obstacle_extractor_node\n'}
+[62.736562] (obstacle_detector) CommandEnded: {'returncode': 0}
+[62.737653] (obstacle_detector) JobProgress: {'identifier': 'obstacle_detector', 'progress': 'install'}
+[62.751460] (obstacle_detector) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yasric/senior_project/build/obstacle_detector'], 'cwd': '/home/yasric/senior_project/build/obstacle_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yasric'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yasric/senior_project/install/obstacle_detector/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yasric'), ('OLDPWD', '/home/yasric'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1759'), ('SYSTEMD_EXEC_PID', '2095'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3027'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yasric/senior_project/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yasric'), ('JOURNAL_STREAM', '8:12217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yasric'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yasric/.local/bin:/opt/ros/humble/bin:/home/yasric/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yasric-Alpha:@/tmp/.ICE-unix/1891,unix/yasric-Alpha:/tmp/.ICE-unix/1891'), ('INVOCATION_ID', '4fffce6041be4d03af23ad43584afd37'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4NPLD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1a0987b0-9540-4f26-b8d2-bd9609527514'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yasric/senior_project/build/obstacle_detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yasric/senior_project/install/obstacle_detector:/opt/ros/humble')]), 'shell': False}
+[62.762836] (obstacle_detector) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[62.763796] (obstacle_detector) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[62.764348] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/rosidl_interfaces/obstacle_detector\n'}
+[62.777848] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.h\n'}
+[62.778152] (-) TimerEvent: {}
+[62.790220] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__functions.h\n'}
+[62.802621] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.h\n'}
+[62.815001] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.h\n'}
+[62.827316] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__functions.h\n'}
+[62.839719] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.h\n'}
+[62.852409] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.h\n'}
+[62.864999] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__functions.h\n'}
+[62.877375] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.h\n'}
+[62.878278] (-) TimerEvent: {}
+[62.890095] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.h\n'}
+[62.902589] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.h\n'}
+[62.915670] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_c__visibility_control.h\n'}
+[62.928345] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.h\n'}
+[62.941057] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.sh\n'}
+[62.953496] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.dsv\n'}
+[62.966536] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_c.h\n'}
+[62.978450] (-) TimerEvent: {}
+[62.978977] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_c.h\n'}
+[62.991732] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_c.h\n'}
+[63.004068] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[63.017490] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.hpp\n'}
+[63.030347] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__builder.hpp\n'}
+[63.042726] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.hpp\n'}
+[63.055205] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__traits.hpp\n'}
+[63.067431] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.hpp\n'}
+[63.078589] (-) TimerEvent: {}
+[63.079841] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__builder.hpp\n'}
+[63.092518] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.hpp\n'}
+[63.105020] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__traits.hpp\n'}
+[63.117623] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.hpp\n'}
+[63.130180] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__builder.hpp\n'}
+[63.142673] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.hpp\n'}
+[63.155170] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__traits.hpp\n'}
+[63.167553] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.hpp\n'}
+[63.178758] (-) TimerEvent: {}
+[63.179929] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.hpp\n'}
+[63.192779] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[63.205381] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.hpp\n'}
+[63.218510] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[63.231034] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[63.243657] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[63.256186] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[63.269903] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_c.h\n'}
+[63.278863] (-) TimerEvent: {}
+[63.283574] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_c.h\n'}
+[63.295894] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_c.h\n'}
+[63.308501] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[63.321550] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[63.333600] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[63.346103] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[63.358706] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.sh\n'}
+[63.371418] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.dsv\n'}
+[63.378997] (-) TimerEvent: {}
+[63.384436] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[63.397063] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[63.410093] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[63.423025] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[63.436349] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py\n'}
+[63.448567] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c\n'}
+[63.460998] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[63.473404] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[63.479134] (-) TimerEvent: {}
+[63.485942] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/libobstacle_detector__rosidl_generator_py.so\n'}
+[63.498262] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py\n'}
+[63.510965] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py\n'}
+[63.523712] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle_s.c\n'}
+[63.536086] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py\n'}
+[63.548337] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles_s.c\n'}
+[63.560369] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py\n'}
+[63.572710] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle_s.c\n'}
+[63.579274] (-) TimerEvent: {}
+[63.585190] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.597799] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.610984] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.624193] (obstacle_detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.624660] (obstacle_detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.625241] (obstacle_detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[63.625626] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.idl\n'}
+[63.638312] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.idl\n'}
+[63.650732] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.idl\n'}
+[63.663255] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.msg\n'}
+[63.675962] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.msg\n'}
+[63.679394] (-) TimerEvent: {}
+[63.688683] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.msg\n'}
+[63.701589] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/ground_filter_node\n'}
+[63.715085] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_extractor.so\n'}
+[63.727991] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_tracker.so\n'}
+[63.740667] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_publisher.so\n'}
+[63.753634] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_extractor_node\n'}
+[63.766426] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_tracker_node\n'}
+[63.778899] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_publisher_node\n'}
+[63.779472] (-) TimerEvent: {}
+[63.792251] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/bringup_all.launch.py\n'}
+[63.804765] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/demo.launch\n'}
+[63.817936] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/filter_and_detect.launch.py\n'}
+[63.830397] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/nodes.launch\n'}
+[63.843042] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_detector_with_ground_filter.launch.xml\n'}
+[63.855739] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor.launch\n'}
+[63.868622] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor_and_tracker.launch\n'}
+[63.879646] (-) TimerEvent: {}
+[63.881293] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_publisher.launch\n'}
+[63.894213] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/package_run_dependencies/obstacle_detector\n'}
+[63.907334] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/parent_prefix_path/obstacle_detector\n'}
+[63.920389] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.sh\n'}
+[63.932886] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.dsv\n'}
+[63.945671] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.sh\n'}
+[63.958212] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.dsv\n'}
+[63.970945] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.bash\n'}
+[63.979793] (-) TimerEvent: {}
+[63.983800] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.sh\n'}
+[63.997220] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.zsh\n'}
+[64.010019] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.dsv\n'}
+[64.023955] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.dsv\n'}
+[64.036639] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/packages/obstacle_detector\n'}
+[64.049302] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake-extras.cmake\n'}
+[64.062086] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[64.074628] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[64.079888] (-) TimerEvent: {}
+[64.087201] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[64.099824] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[64.112547] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[64.125702] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[64.138232] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig.cmake\n'}
+[64.150849] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig-version.cmake\n'}
+[64.163402] (obstacle_detector) StdoutLine: {'line': b'-- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.xml\n'}
+[64.176087] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so\n'}
+[64.176949] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so" to ""\n'}
+[64.177175] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so\n'}
+[64.177797] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[64.178214] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so\n'}
+[64.178906] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[64.179238] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so\n'}
+[64.179901] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so" to ""\n'}
+[64.180198] (-) TimerEvent: {}
+[64.180423] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so\n'}
+[64.180877] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so" to ""\n'}
+[64.181174] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so\n'}
+[64.181839] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[64.182213] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so\n'}
+[64.182764] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so" to ""\n'}
+[64.236129] (obstacle_detector) StdoutLine: {'line': b"Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector'...\n"}
+[64.236395] (obstacle_detector) StdoutLine: {'line': b"Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py'...\n"}
+[64.236536] (obstacle_detector) StdoutLine: {'line': b"Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg'...\n"}
+[64.236656] (obstacle_detector) StdoutLine: {'line': b"Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py'...\n"}
+[64.236887] (obstacle_detector) StdoutLine: {'line': b"Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py'...\n"}
+[64.237009] (obstacle_detector) StdoutLine: {'line': b"Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py'...\n"}
+[64.237187] (obstacle_detector) StdoutLine: {'line': b"Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py'...\n"}
+[64.243638] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so\n'}
+[64.244287] (obstacle_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so" to ""\n'}
+[64.244527] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport.cmake\n'}
+[64.244764] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport-noconfig.cmake\n'}
+[64.244970] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[64.245160] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[64.245357] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cppExport.cmake\n'}
+[64.245545] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[64.245740] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[64.245966] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport.cmake\n'}
+[64.246173] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[64.246393] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport.cmake\n'}
+[64.246598] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[64.246874] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[64.247105] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[64.247398] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport.cmake\n'}
+[64.247601] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[64.247830] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport.cmake\n'}
+[64.248043] (obstacle_detector) StdoutLine: {'line': b'-- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport-noconfig.cmake\n'}
+[64.251304] (obstacle_detector) CommandEnded: {'returncode': 0}
+[64.280535] (-) TimerEvent: {}
+[64.284322] (obstacle_detector) JobEnded: {'identifier': 'obstacle_detector', 'rc': 0}
+[64.285523] (-) EventReactorShutdown: {}

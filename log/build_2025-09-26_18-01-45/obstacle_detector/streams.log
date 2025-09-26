@@ -1,0 +1,417 @@
+[0.014s] Invoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yasric/senior_project/src/obstacle_detector_2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yasric/senior_project/install/obstacle_detector
+[0.090s] -- The C compiler identification is GNU 11.4.0
+[0.173s] -- The CXX compiler identification is GNU 11.4.0
+[0.183s] -- Detecting C compiler ABI info
+[0.282s] -- Detecting C compiler ABI info - done
+[0.293s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.294s] -- Detecting C compile features
+[0.294s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.412s] -- Detecting CXX compiler ABI info - done
+[0.423s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.424s] -- Detecting CXX compile features
+[0.425s] -- Detecting CXX compile features - done
+[0.428s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.642s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.732s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.763s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.816s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.822s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.833s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.851s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.873s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.933s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.937s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.055s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.092s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.150s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.161s] -- Looking for pthread.h
+[1.263s] -- Looking for pthread.h - found
+[1.264s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.369s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.371s] -- Found Threads: TRUE  
+[1.445s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.465s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.493s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.519s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.550s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.565s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[1.579s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.708s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.725s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.727s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.727s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.732s] -- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)
+[1.739s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.770s] -- Checking for module 'eigen3'
+[1.789s] --   Found eigen3, version 3.4.0
+[1.836s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.836s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.863s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.885s] -- Checking for module 'flann'
+[1.904s] --   Found flann, version 1.9.1
+[1.960s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.960s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.018s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[2.026s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[2.234s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[2.235s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[2.240s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[2.253s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[2.279s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[2.306s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[2.438s] -- Found X11: /usr/include   
+[2.439s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.544s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.544s] -- Looking for gethostbyname
+[2.644s] -- Looking for gethostbyname - found
+[2.644s] -- Looking for connect
+[2.742s] -- Looking for connect - found
+[2.742s] -- Looking for remove
+[2.840s] -- Looking for remove - found
+[2.841s] -- Looking for shmat
+[2.940s] -- Looking for shmat - found
+[2.941s] -- Looking for IceConnectionNumber in ICE
+[3.040s] -- Looking for IceConnectionNumber in ICE - found
+[3.157s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[3.161s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[3.164s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[3.167s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[3.208s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[3.216s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[3.223s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[3.233s] -- Found utf8cpp: /usr/include/utf8cpp  
+[3.358s] -- Checking for module 'libusb-1.0'
+[3.379s] --   Found libusb-1.0, version 1.0.25
+[3.432s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.434s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[3.434s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.518s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[3.518s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.518s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[3.739s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.749s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.759s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.965s] -- Found Qhull version 8.0.2
+[4.181s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.393s] -- looking for PCL_COMMON
+[4.396s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.396s] -- looking for PCL_KDTREE
+[4.397s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.397s] -- looking for PCL_OCTREE
+[4.399s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.399s] -- looking for PCL_SEARCH
+[4.400s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.400s] -- looking for PCL_SAMPLE_CONSENSUS
+[4.402s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.402s] -- looking for PCL_FILTERS
+[4.403s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.403s] -- looking for PCL_2D
+[4.404s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.404s] -- looking for PCL_GEOMETRY
+[4.405s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.405s] -- looking for PCL_IO
+[4.406s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.407s] -- looking for PCL_FEATURES
+[4.408s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.408s] -- looking for PCL_ML
+[4.409s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.410s] -- looking for PCL_SEGMENTATION
+[4.411s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.411s] -- looking for PCL_VISUALIZATION
+[4.412s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.413s] -- looking for PCL_SURFACE
+[4.414s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.414s] -- looking for PCL_REGISTRATION
+[4.415s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.416s] -- looking for PCL_KEYPOINTS
+[4.417s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.417s] -- looking for PCL_TRACKING
+[4.419s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.419s] -- looking for PCL_RECOGNITION
+[4.420s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.421s] -- looking for PCL_STEREO
+[4.422s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.422s] -- looking for PCL_APPS
+[4.424s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.424s] -- looking for PCL_IN_HAND_SCANNER
+[4.425s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.425s] -- looking for PCL_MODELER
+[4.426s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.426s] -- looking for PCL_POINT_CLOUD_EDITOR
+[4.426s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.427s] -- looking for PCL_OUTOFCORE
+[4.428s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.428s] -- looking for PCL_PEOPLE
+[4.430s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.431s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[4.433s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.472s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[4.492s] -- Found Armadillo: /usr/include (found version "10.8.2") 
+[4.498s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.54.0") found components: system 
+[4.947s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.581s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.827s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.862s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.864s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.902s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.903s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.903s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.903s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.936s] -- Found PythonExtra: .so  
+[6.110s] -- Configuring done
+[6.596s] -- Generating done
+[6.691s] -- Build files have been written to: /home/yasric/senior_project/build/obstacle_detector
+[6.725s] Invoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yasric/senior_project/src/obstacle_detector_2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yasric/senior_project/install/obstacle_detector
+[6.729s] Invoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yasric/senior_project/build/obstacle_detector -- -j4 -l4
+[6.802s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.823s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.827s] [  4%] [32mBuilding CXX object CMakeFiles/ground_filter_node.dir/src/nodes/ground_filter_node.cpp.o[0m
+[6.838s] [  4%] Built target ament_cmake_python_symlink_obstacle_detector
+[7.492s] running egg_info
+[7.493s] creating obstacle_detector.egg-info
+[7.493s] writing obstacle_detector.egg-info/PKG-INFO
+[7.494s] writing dependency_links to obstacle_detector.egg-info/dependency_links.txt
+[7.494s] writing top-level names to obstacle_detector.egg-info/top_level.txt
+[7.495s] writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+[7.500s] reading manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+[7.500s] writing manifest file 'obstacle_detector.egg-info/SOURCES.txt'
+[7.556s] [  4%] Built target ament_cmake_python_build_obstacle_detector_egg
+[8.077s] [  4%] Built target obstacle_detector__cpp
+[8.099s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.100s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.880s] [  9%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/circle_obstacle__functions.c.o[0m
+[9.002s] [ 11%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/obstacles__functions.c.o[0m
+[9.121s] [ 13%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_c.dir/rosidl_generator_c/obstacle_detector/msg/detail/segment_obstacle__functions.c.o[0m
+[9.246s] [ 14%] [32m[1mLinking C shared library libobstacle_detector__rosidl_generator_c.so[0m
+[9.333s] [ 14%] Built target obstacle_detector__rosidl_generator_c
+[9.352s] [ 16%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/circle_obstacle__type_support.cpp.o[0m
+[9.356s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.585s] [ 19%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/circle_obstacle__type_support.cpp.o[0m
+[9.997s] [ 21%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/obstacles__type_support.cpp.o[0m
+[10.557s] [ 22%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/obstacles__type_support.cpp.o[0m
+[10.646s] [ 24%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/obstacle_detector/msg/segment_obstacle__type_support.cpp.o[0m
+[10.844s] [ 26%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/circle_obstacle__type_support.cpp.o[0m
+[11.284s] [ 27%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_cpp.so[0m
+[11.380s] [ 27%] Built target obstacle_detector__rosidl_typesupport_cpp
+[11.396s] [ 29%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/obstacle_detector/msg/detail/dds_fastrtps/segment_obstacle__type_support.cpp.o[0m
+[11.751s] [ 31%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/obstacles__type_support.cpp.o[0m
+[11.764s] [ 32%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/obstacle_detector/msg/detail/segment_obstacle__type_support.cpp.o[0m
+[12.372s] [ 34%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.565s] [ 34%] Built target obstacle_detector__rosidl_typesupport_fastrtps_cpp
+[12.587s] [ 36%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[12.694s] [ 37%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.905s] [ 39%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_introspection_cpp.so[0m
+[13.088s] [ 39%] Built target obstacle_detector__rosidl_typesupport_introspection_cpp
+[13.110s] [ 40%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[14.060s] [ 42%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/circle_obstacle__type_support_c.cpp.o[0m
+[14.140s] [ 44%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/circle_obstacle__type_support.c.o[0m
+[14.224s] [ 45%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/obstacles__type_support.c.o[0m
+[14.327s] [ 47%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/segment_obstacle__type_support.c.o[0m
+[14.410s] [ 50%] [32m[1mLinking C shared library libobstacle_detector__rosidl_typesupport_introspection_c.so[0m
+[14.411s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/circle_obstacle__type_support.cpp.o[0m
+[14.480s] [ 52%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/obstacles__type_support.cpp.o[0m
+[14.482s] [ 52%] Built target obstacle_detector__rosidl_typesupport_introspection_c
+[14.506s] [ 54%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/obstacles__type_support_c.cpp.o[0m
+[14.551s] [ 55%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/obstacle_detector/msg/segment_obstacle__type_support.cpp.o[0m
+[14.621s] [ 57%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_c.so[0m
+[14.714s] [ 57%] Built target obstacle_detector__rosidl_typesupport_c
+[14.735s] [ 59%] [32mBuilding CXX object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/detail/segment_obstacle__type_support_c.cpp.o[0m
+[14.959s] [ 60%] [32mBuilding CXX object CMakeFiles/obstacle_extractor.dir/src/obstacle_extractor.cpp.o[0m
+[15.399s] [ 62%] [32mBuilding CXX object CMakeFiles/obstacle_tracker.dir/src/obstacle_tracker.cpp.o[0m
+[15.631s] [ 63%] [32m[1mLinking CXX shared library libobstacle_detector__rosidl_typesupport_fastrtps_c.so[0m
+[15.838s] [ 63%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c
+[15.890s] [ 65%] [32mBuilding CXX object CMakeFiles/obstacle_publisher.dir/src/obstacle_publisher.cpp.o[0m
+[27.072s] [ 67%] [32m[1mLinking CXX shared library libobstacle_publisher.so[0m
+[28.548s] [ 67%] Built target obstacle_publisher
+[28.589s] [ 67%] Built target obstacle_detector
+[28.638s] [ 68%] [32mBuilding CXX object CMakeFiles/obstacle_publisher_node.dir/src/nodes/obstacle_publisher_node.cpp.o[0m
+[36.124s] [ 70%] [32m[1mLinking CXX executable obstacle_publisher_node[0m
+[36.708s] [ 72%] [32m[1mLinking CXX executable ground_filter_node[0m
+[37.203s] [ 72%] Built target obstacle_publisher_node
+[37.250s] [ 73%] [34m[1mGenerating Python code for ROS interfaces[0m
+[39.683s] [ 73%] Built target ground_filter_node
+[39.792s] [ 73%] Built target obstacle_detector__py
+[39.836s] [ 77%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_obstacles_s.c.o[0m
+[39.837s] [ 77%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_circle_obstacle_s.c.o[0m
+[40.097s] [ 78%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_generator_py.dir/rosidl_generator_py/obstacle_detector/msg/_segment_obstacle_s.c.o[0m
+[40.335s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/libobstacle_detector__rosidl_generator_py.so[0m
+[40.405s] [ 80%] Built target obstacle_detector__rosidl_generator_py
+[40.451s] [ 81%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[40.453s] [ 83%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[40.733s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[40.756s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[40.832s] [ 86%] Built target obstacle_detector__rosidl_typesupport_introspection_c__pyext
+[40.868s] [ 86%] Built target obstacle_detector__rosidl_typesupport_fastrtps_c__pyext
+[40.875s] [ 88%] [32mBuilding C object CMakeFiles/obstacle_detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c.o[0m
+[41.052s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[41.117s] [ 90%] Built target obstacle_detector__rosidl_typesupport_c__pyext
+[48.894s] [ 91%] [32m[1mLinking CXX shared library libobstacle_tracker.so[0m
+[51.167s] [ 91%] Built target obstacle_tracker
+[51.198s] [ 93%] [32mBuilding CXX object CMakeFiles/obstacle_tracker_node.dir/src/nodes/obstacle_tracker_node.cpp.o[0m
+[52.249s] [ 95%] [32m[1mLinking CXX shared library libobstacle_extractor.so[0m
+[55.128s] [ 95%] Built target obstacle_extractor
+[55.159s] [ 96%] [32mBuilding CXX object CMakeFiles/obstacle_extractor_node.dir/src/nodes/obstacle_extractor_node.cpp.o[0m
+[60.041s] [ 98%] [32m[1mLinking CXX executable obstacle_tracker_node[0m
+[61.064s] [100%] [32m[1mLinking CXX executable obstacle_extractor_node[0m
+[61.556s] [100%] Built target obstacle_tracker_node
+[62.717s] [100%] Built target obstacle_extractor_node
+[62.736s] Invoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yasric/senior_project/build/obstacle_detector -- -j4 -l4
+[62.751s] Invoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yasric/senior_project/build/obstacle_detector
+[62.762s] -- Install configuration: ""
+[62.763s] -- Execute custom install script
+[62.763s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/rosidl_interfaces/obstacle_detector
+[62.777s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.h
+[62.789s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__functions.h
+[62.802s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.h
+[62.814s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.h
+[62.826s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__functions.h
+[62.839s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.h
+[62.851s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.h
+[62.864s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__functions.h
+[62.876s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.h
+[62.889s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.h
+[62.902s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.h
+[62.915s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_c__visibility_control.h
+[62.927s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.h
+[62.940s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.sh
+[62.952s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/library_path.dsv
+[62.966s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_c.h
+[62.978s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_c.h
+[62.991s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_c.h
+[63.003s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[63.016s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/circle_obstacle.hpp
+[63.029s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__builder.hpp
+[63.042s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__struct.hpp
+[63.054s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__traits.hpp
+[63.066s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__type_support.hpp
+[63.079s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__builder.hpp
+[63.091s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__struct.hpp
+[63.104s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__traits.hpp
+[63.117s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__type_support.hpp
+[63.129s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__builder.hpp
+[63.142s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__struct.hpp
+[63.154s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__traits.hpp
+[63.167s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__type_support.hpp
+[63.179s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/obstacles.hpp
+[63.192s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_generator_cpp__visibility_control.hpp
+[63.204s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/segment_obstacle.hpp
+[63.218s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_fastrtps_cpp.hpp
+[63.230s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_fastrtps_cpp.hpp
+[63.243s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_fastrtps_cpp.hpp
+[63.255s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[63.269s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_c.h
+[63.283s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_c.h
+[63.295s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_c.h
+[63.308s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[63.321s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/circle_obstacle__rosidl_typesupport_introspection_cpp.hpp
+[63.333s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/obstacles__rosidl_typesupport_introspection_cpp.hpp
+[63.345s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/include/obstacle_detector/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_cpp.hpp
+[63.358s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.sh
+[63.370s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/pythonpath.dsv
+[63.383s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/PKG-INFO
+[63.396s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/SOURCES.txt
+[63.409s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/dependency_links.txt
+[63.422s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector-1.0.0-py3.10.egg-info/top_level.txt
+[63.435s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py
+[63.448s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c
+[63.460s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+[63.472s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_introspection_c.c
+[63.485s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/libobstacle_detector__rosidl_generator_py.so
+[63.497s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py
+[63.510s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py
+[63.523s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle_s.c
+[63.535s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py
+[63.547s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles_s.c
+[63.559s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py
+[63.572s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle_s.c
+[63.584s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[63.597s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[63.610s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[63.623s] -- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[63.624s] -- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[63.624s] -- Up-to-date symlink: /home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/obstacle_detector_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[63.625s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.idl
+[63.637s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.idl
+[63.650s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.idl
+[63.662s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/CircleObstacle.msg
+[63.675s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/Obstacles.msg
+[63.688s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/msg/SegmentObstacle.msg
+[63.701s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/ground_filter_node
+[63.714s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_extractor.so
+[63.727s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_tracker.so
+[63.740s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_publisher.so
+[63.753s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_extractor_node
+[63.765s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_tracker_node
+[63.778s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/lib/obstacle_detector/obstacle_publisher_node
+[63.791s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/bringup_all.launch.py
+[63.804s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/demo.launch
+[63.817s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/filter_and_detect.launch.py
+[63.829s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/nodes.launch
+[63.842s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_detector_with_ground_filter.launch.xml
+[63.855s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor.launch
+[63.868s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_extractor_and_tracker.launch
+[63.880s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector//launch/obstacle_publisher.launch
+[63.893s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/package_run_dependencies/obstacle_detector
+[63.906s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/parent_prefix_path/obstacle_detector
+[63.919s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.sh
+[63.932s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/ament_prefix_path.dsv
+[63.945s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.sh
+[63.957s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/environment/path.dsv
+[63.970s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.bash
+[63.983s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.sh
+[63.996s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.zsh
+[64.009s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/local_setup.dsv
+[64.023s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.dsv
+[64.036s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/ament_index/resource_index/packages/obstacle_detector
+[64.048s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake-extras.cmake
+[64.061s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[64.074s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[64.086s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[64.099s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/ament_cmake_export_targets-extras.cmake
+[64.112s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[64.125s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[64.137s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig.cmake
+[64.150s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detectorConfig-version.cmake
+[64.162s] -- Symlinking: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.xml
+[64.175s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so
+[64.176s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_c.so" to ""
+[64.176s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so
+[64.177s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_c.so" to ""
+[64.177s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so
+[64.178s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_fastrtps_cpp.so" to ""
+[64.178s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so
+[64.179s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_c.so" to ""
+[64.179s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so
+[64.180s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_c.so" to ""
+[64.180s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so
+[64.181s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_introspection_cpp.so" to ""
+[64.181s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so
+[64.182s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_typesupport_cpp.so" to ""
+[64.235s] Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector'...
+[64.235s] Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/__init__.py'...
+[64.235s] Listing '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg'...
+[64.236s] Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/__init__.py'...
+[64.236s] Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_circle_obstacle.py'...
+[64.236s] Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_obstacles.py'...
+[64.236s] Compiling '/home/yasric/senior_project/install/obstacle_detector/local/lib/python3.10/dist-packages/obstacle_detector/msg/_segment_obstacle.py'...
+[64.243s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so
+[64.243s] -- Set runtime path of "/home/yasric/senior_project/install/obstacle_detector/lib/libobstacle_detector__rosidl_generator_py.so" to ""
+[64.243s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport.cmake
+[64.244s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cExport-noconfig.cmake
+[64.244s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport.cmake
+[64.244s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[64.244s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_cppExport.cmake
+[64.244s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport.cmake
+[64.245s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[64.245s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport.cmake
+[64.245s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[64.245s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport.cmake
+[64.245s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cExport-noconfig.cmake
+[64.246s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport.cmake
+[64.246s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[64.246s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport.cmake
+[64.247s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/obstacle_detector__rosidl_typesupport_cppExport-noconfig.cmake
+[64.247s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport.cmake
+[64.247s] -- Installing: /home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/cmake/export_obstacle_detector__rosidl_generator_pyExport-noconfig.cmake
+[64.251s] Invoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yasric/senior_project/build/obstacle_detector

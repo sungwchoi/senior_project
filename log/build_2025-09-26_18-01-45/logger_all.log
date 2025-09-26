@@ -1,0 +1,741 @@
+[0.165s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--symlink-install'][0m
+[0.165s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x740ce8d024d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x740ce8d014b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x740ce8d014b0>>)[0m
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.433s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.434s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/yasric/senior_project'
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.434s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.462s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.462s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.462s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.462s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.462s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.463s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.464s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extension 'ignore'
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extension 'ignore_ament_install'
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extensions ['colcon_pkg']
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extension 'colcon_pkg'
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extensions ['colcon_meta']
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extension 'colcon_meta'
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extensions ['ros']
+[0.465s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacle_detector_2) by extension 'ros'
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/obstacle_detector_2' with type 'ros.ament_cmake' and name 'obstacle_detector'[0m
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'ignore'
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'ignore_ament_install'
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['colcon_pkg']
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'colcon_pkg'
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['colcon_meta']
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'colcon_meta'
+[0.471s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['ros']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'ros'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['cmake', 'python']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'cmake'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'python'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extensions ['python_setup_py']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5) by extension 'python_setup_py'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'ignore'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'ignore_ament_install'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['colcon_pkg']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'colcon_pkg'
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['colcon_meta']
+[0.472s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'colcon_meta'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['ros']
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'ros'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['cmake', 'python']
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'cmake'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'python'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extensions ['python_setup_py']
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/__pycache__) by extension 'python_setup_py'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'ignore'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'ignore_ament_install'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['colcon_pkg']
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'colcon_pkg'
+[0.473s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['colcon_meta']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'colcon_meta'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['ros']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'ros'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['cmake', 'python']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'cmake'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'python'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extensions ['python_setup_py']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/classify) by extension 'python_setup_py'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['ignore', 'ignore_ament_install']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'ignore'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'ignore_ament_install'
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['colcon_pkg']
+[0.474s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'colcon_pkg'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['colcon_meta']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'colcon_meta'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['ros']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'ros'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['cmake', 'python']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'cmake'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'python'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extensions ['python_setup_py']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data) by extension 'python_setup_py'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['ignore', 'ignore_ament_install']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'ignore'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'ignore_ament_install'
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['colcon_pkg']
+[0.475s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'colcon_pkg'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['colcon_meta']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'colcon_meta'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['ros']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'ros'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['cmake', 'python']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'cmake'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'python'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extensions ['python_setup_py']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/hyps) by extension 'python_setup_py'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'ignore'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'ignore_ament_install'
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['colcon_pkg']
+[0.476s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'colcon_pkg'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['colcon_meta']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'colcon_meta'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['ros']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'ros'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['cmake', 'python']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'cmake'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'python'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extensions ['python_setup_py']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/images) by extension 'python_setup_py'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'ignore'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'ignore_ament_install'
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['colcon_pkg']
+[0.477s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'colcon_pkg'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['colcon_meta']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'colcon_meta'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['ros']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'ros'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['cmake', 'python']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'cmake'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'python'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extensions ['python_setup_py']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/data/scripts) by extension 'python_setup_py'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['ignore', 'ignore_ament_install']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'ignore'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'ignore_ament_install'
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['colcon_pkg']
+[0.478s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'colcon_pkg'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['colcon_meta']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'colcon_meta'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['ros']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'ros'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['cmake', 'python']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'cmake'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'python'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extensions ['python_setup_py']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models) by extension 'python_setup_py'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'ignore'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'ignore_ament_install'
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['colcon_pkg']
+[0.479s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'colcon_pkg'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['colcon_meta']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'colcon_meta'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['ros']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'ros'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['cmake', 'python']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'cmake'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'python'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extensions ['python_setup_py']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/__pycache__) by extension 'python_setup_py'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'ignore'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'ignore_ament_install'
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['colcon_pkg']
+[0.480s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'colcon_pkg'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['colcon_meta']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'colcon_meta'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['ros']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'ros'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['cmake', 'python']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'cmake'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'python'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extensions ['python_setup_py']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/hub) by extension 'python_setup_py'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'ignore'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'ignore_ament_install'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['colcon_pkg']
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'colcon_pkg'
+[0.481s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['colcon_meta']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'colcon_meta'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['ros']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'ros'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['cmake', 'python']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'cmake'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'python'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extensions ['python_setup_py']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/models/segment) by extension 'python_setup_py'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['ignore', 'ignore_ament_install']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'ignore'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'ignore_ament_install'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['colcon_pkg']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'colcon_pkg'
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['colcon_meta']
+[0.482s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'colcon_meta'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['ros']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'ros'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['cmake', 'python']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'cmake'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'python'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extensions ['python_setup_py']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs) by extension 'python_setup_py'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'ignore'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'ignore_ament_install'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['colcon_pkg']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'colcon_pkg'
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['colcon_meta']
+[0.483s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'colcon_meta'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['ros']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'ros'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['cmake', 'python']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'cmake'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'python'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extensions ['python_setup_py']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect) by extension 'python_setup_py'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'ignore'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'ignore_ament_install'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['colcon_pkg']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'colcon_pkg'
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['colcon_meta']
+[0.484s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'colcon_meta'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['ros']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'ros'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['cmake', 'python']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'cmake'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'python'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extensions ['python_setup_py']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp) by extension 'python_setup_py'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'ignore'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'ignore_ament_install'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['colcon_pkg']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'colcon_pkg'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['colcon_meta']
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'colcon_meta'
+[0.485s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['ros']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'ros'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['cmake', 'python']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'cmake'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'python'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extensions ['python_setup_py']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp10) by extension 'python_setup_py'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'ignore'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'ignore_ament_install'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['colcon_pkg']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'colcon_pkg'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['colcon_meta']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'colcon_meta'
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['ros']
+[0.486s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'ros'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['cmake', 'python']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'cmake'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'python'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extensions ['python_setup_py']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp11) by extension 'python_setup_py'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['ignore', 'ignore_ament_install']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'ignore'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'ignore_ament_install'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['colcon_pkg']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'colcon_pkg'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['colcon_meta']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'colcon_meta'
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['ros']
+[0.487s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'ros'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['cmake', 'python']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'cmake'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'python'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extensions ['python_setup_py']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp12) by extension 'python_setup_py'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'ignore'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'ignore_ament_install'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['colcon_pkg']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'colcon_pkg'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['colcon_meta']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'colcon_meta'
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['ros']
+[0.488s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'ros'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['cmake', 'python']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'cmake'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'python'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extensions ['python_setup_py']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp13) by extension 'python_setup_py'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'ignore'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'ignore_ament_install'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['colcon_pkg']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'colcon_pkg'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['colcon_meta']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'colcon_meta'
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['ros']
+[0.489s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'ros'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['cmake', 'python']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'cmake'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'python'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extensions ['python_setup_py']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp14) by extension 'python_setup_py'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['ignore', 'ignore_ament_install']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'ignore'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'ignore_ament_install'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['colcon_pkg']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'colcon_pkg'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['colcon_meta']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'colcon_meta'
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['ros']
+[0.490s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'ros'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['cmake', 'python']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'cmake'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'python'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extensions ['python_setup_py']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp15) by extension 'python_setup_py'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'ignore'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'ignore_ament_install'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['colcon_pkg']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'colcon_pkg'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['colcon_meta']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'colcon_meta'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['ros']
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'ros'
+[0.491s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['cmake', 'python']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'cmake'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'python'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extensions ['python_setup_py']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp16) by extension 'python_setup_py'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'ignore'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'ignore_ament_install'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['colcon_pkg']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'colcon_pkg'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['colcon_meta']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'colcon_meta'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['ros']
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'ros'
+[0.492s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['cmake', 'python']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'cmake'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'python'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extensions ['python_setup_py']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp17) by extension 'python_setup_py'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'ignore'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'ignore_ament_install'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['colcon_pkg']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'colcon_pkg'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['colcon_meta']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'colcon_meta'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['ros']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'ros'
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['cmake', 'python']
+[0.493s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'cmake'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'python'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extensions ['python_setup_py']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp2) by extension 'python_setup_py'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'ignore'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'ignore_ament_install'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['colcon_pkg']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'colcon_pkg'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['colcon_meta']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'colcon_meta'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['ros']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'ros'
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['cmake', 'python']
+[0.494s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'cmake'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'python'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extensions ['python_setup_py']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp3) by extension 'python_setup_py'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'ignore'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'ignore_ament_install'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['colcon_pkg']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'colcon_pkg'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['colcon_meta']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'colcon_meta'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['ros']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'ros'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['cmake', 'python']
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'cmake'
+[0.495s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'python'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extensions ['python_setup_py']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp4) by extension 'python_setup_py'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'ignore'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'ignore_ament_install'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['colcon_pkg']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'colcon_pkg'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['colcon_meta']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'colcon_meta'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['ros']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'ros'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['cmake', 'python']
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'cmake'
+[0.496s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'python'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extensions ['python_setup_py']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp5) by extension 'python_setup_py'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'ignore'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'ignore_ament_install'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['colcon_pkg']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'colcon_pkg'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['colcon_meta']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'colcon_meta'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['ros']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'ros'
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['cmake', 'python']
+[0.497s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'cmake'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'python'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extensions ['python_setup_py']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp6) by extension 'python_setup_py'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'ignore'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'ignore_ament_install'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['colcon_pkg']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'colcon_pkg'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['colcon_meta']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'colcon_meta'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['ros']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'ros'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['cmake', 'python']
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'cmake'
+[0.498s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'python'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extensions ['python_setup_py']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp7) by extension 'python_setup_py'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'ignore'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'ignore_ament_install'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['colcon_pkg']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'colcon_pkg'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['colcon_meta']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'colcon_meta'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['ros']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'ros'
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['cmake', 'python']
+[0.499s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'cmake'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'python'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extensions ['python_setup_py']
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp8) by extension 'python_setup_py'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['ignore', 'ignore_ament_install']
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'ignore'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'ignore_ament_install'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['colcon_pkg']
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'colcon_pkg'
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['colcon_meta']
+[0.500s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'colcon_meta'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['ros']
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'ros'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['cmake', 'python']
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'cmake'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'python'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extensions ['python_setup_py']
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/runs/detect/exp9) by extension 'python_setup_py'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'ignore'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'ignore_ament_install'
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['colcon_pkg']
+[0.501s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'colcon_pkg'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['colcon_meta']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'colcon_meta'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['ros']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'ros'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['cmake', 'python']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'cmake'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'python'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extensions ['python_setup_py']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/segment) by extension 'python_setup_py'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'ignore'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'ignore_ament_install'
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['colcon_pkg']
+[0.502s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'colcon_pkg'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['colcon_meta']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'colcon_meta'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['ros']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'ros'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['cmake', 'python']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'cmake'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'python'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extensions ['python_setup_py']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils) by extension 'python_setup_py'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'ignore'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'ignore_ament_install'
+[0.503s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['colcon_pkg']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'colcon_pkg'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['colcon_meta']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'colcon_meta'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['ros']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'ros'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['cmake', 'python']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'cmake'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'python'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extensions ['python_setup_py']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/__pycache__) by extension 'python_setup_py'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'ignore'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'ignore_ament_install'
+[0.504s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['colcon_pkg']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'colcon_pkg'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['colcon_meta']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'colcon_meta'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['ros']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'ros'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['cmake', 'python']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'cmake'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'python'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extensions ['python_setup_py']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/aws) by extension 'python_setup_py'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'ignore'
+[0.505s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'ignore_ament_install'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['colcon_pkg']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'colcon_pkg'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['colcon_meta']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'colcon_meta'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['ros']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'ros'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['cmake', 'python']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'cmake'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'python'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extensions ['python_setup_py']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/docker) by extension 'python_setup_py'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'ignore'
+[0.506s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'ignore_ament_install'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['colcon_pkg']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'colcon_pkg'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['colcon_meta']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'colcon_meta'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['ros']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'ros'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['cmake', 'python']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'cmake'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'python'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extensions ['python_setup_py']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/flask_rest_api) by extension 'python_setup_py'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'ignore'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'ignore_ament_install'
+[0.507s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['colcon_pkg']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'colcon_pkg'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['colcon_meta']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'colcon_meta'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['ros']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'ros'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['cmake', 'python']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'cmake'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'python'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extensions ['python_setup_py']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/google_app_engine) by extension 'python_setup_py'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'ignore'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'ignore_ament_install'
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['colcon_pkg']
+[0.508s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'colcon_pkg'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['colcon_meta']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'colcon_meta'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['ros']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'ros'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['cmake', 'python']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'cmake'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'python'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extensions ['python_setup_py']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers) by extension 'python_setup_py'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'ignore'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'ignore_ament_install'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['colcon_pkg']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'colcon_pkg'
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['colcon_meta']
+[0.509s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'colcon_meta'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['ros']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'ros'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['cmake', 'python']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'cmake'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'python'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extensions ['python_setup_py']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/clearml) by extension 'python_setup_py'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'ignore'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'ignore_ament_install'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['colcon_pkg']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'colcon_pkg'
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['colcon_meta']
+[0.510s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'colcon_meta'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['ros']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'ros'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['cmake', 'python']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'cmake'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'python'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extensions ['python_setup_py']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/comet) by extension 'python_setup_py'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'ignore'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'ignore_ament_install'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['colcon_pkg']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'colcon_pkg'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['colcon_meta']
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'colcon_meta'
+[0.511s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['ros']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'ros'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['cmake', 'python']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'cmake'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'python'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extensions ['python_setup_py']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/loggers/wandb) by extension 'python_setup_py'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['ignore', 'ignore_ament_install']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'ignore'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'ignore_ament_install'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['colcon_pkg']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'colcon_pkg'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['colcon_meta']
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'colcon_meta'
+[0.512s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['ros']
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'ros'
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['cmake', 'python']
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'cmake'
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'python'
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extensions ['python_setup_py']
+[0.513s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(yolov5/utils/segment) by extension 'python_setup_py'
+[0.513s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.513s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.513s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.513s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.513s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.536s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.537s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.538s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/yasric/senior_project/install/obstacle_detector' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.538s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/yasric/senior_project/install/obstacle_detector' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.539s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 0 installed packages in /home/yasric/senior_project/install[0m
+[0.541s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 276 installed packages in /opt/ros/humble[0m
+[0.542s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_args' from command line to 'None'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_target' from command line to 'None'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.597s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'obstacle_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yasric/senior_project/build/obstacle_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yasric/senior_project/install/obstacle_detector', 'merge_install': False, 'path': '/home/yasric/senior_project/src/obstacle_detector_2', 'symlink_install': True, 'test_result_base': None}[0m
+[0.597s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.599s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.599s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/yasric/senior_project/src/obstacle_detector_2' with build type 'ament_cmake'
+[0.599s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/yasric/senior_project/src/obstacle_detector_2'
+[0.602s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.602s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.602s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.614s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yasric/senior_project/src/obstacle_detector_2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yasric/senior_project/install/obstacle_detector[0m
+[7.325s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yasric/senior_project/src/obstacle_detector_2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yasric/senior_project/install/obstacle_detector[0m
+[7.329s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yasric/senior_project/build/obstacle_detector -- -j4 -l4[0m
+[63.335s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yasric/senior_project/build/obstacle_detector -- -j4 -l4[0m
+[63.351s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/yasric/senior_project/build/obstacle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yasric/senior_project/build/obstacle_detector[0m
+[64.850s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(obstacle_detector)
+[64.851s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/yasric/senior_project/build/obstacle_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yasric/senior_project/build/obstacle_detector[0m
+[64.853s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector' for CMake module files
+[64.854s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector' for CMake config files
+[64.855s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_detector', 'cmake_prefix_path')
+[64.855s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.ps1'
+[64.856s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.dsv'
+[64.857s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.sh'
+[64.858s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib'
+[64.858s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_detector', 'ld_library_path_lib')
+[64.858s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.ps1'
+[64.859s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.dsv'
+[64.859s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.sh'
+[64.860s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/bin'
+[64.860s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib/pkgconfig/obstacle_detector.pc'
+[64.860s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib/python3.10/site-packages'
+[64.861s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/bin'
+[64.861s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.ps1'
+[64.862s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.dsv'
+[64.863s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.sh'
+[64.864s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.bash'
+[64.866s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.zsh'
+[64.867s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/yasric/senior_project/install/obstacle_detector/share/colcon-core/packages/obstacle_detector)
+[64.868s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(obstacle_detector)
+[64.868s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector' for CMake module files
+[64.869s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector' for CMake config files
+[64.870s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_detector', 'cmake_prefix_path')
+[64.871s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.ps1'
+[64.872s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.dsv'
+[64.872s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/cmake_prefix_path.sh'
+[64.873s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib'
+[64.873s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_detector', 'ld_library_path_lib')
+[64.874s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.ps1'
+[64.875s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.dsv'
+[64.876s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/hook/ld_library_path_lib.sh'
+[64.877s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/bin'
+[64.877s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib/pkgconfig/obstacle_detector.pc'
+[64.877s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/lib/python3.10/site-packages'
+[64.878s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/yasric/senior_project/install/obstacle_detector/bin'
+[64.878s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.ps1'
+[64.879s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.dsv'
+[64.880s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.sh'
+[64.881s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.bash'
+[64.881s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/yasric/senior_project/install/obstacle_detector/share/obstacle_detector/package.zsh'
+[64.882s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/yasric/senior_project/install/obstacle_detector/share/colcon-core/packages/obstacle_detector)
+[64.883s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[64.883s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[64.884s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[64.884s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[64.891s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[64.891s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[64.891s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[64.909s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[64.909s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/yasric/senior_project/install/local_setup.ps1'
+[64.911s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/yasric/senior_project/install/_local_setup_util_ps1.py'
+[64.913s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/yasric/senior_project/install/setup.ps1'
+[64.916s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/yasric/senior_project/install/local_setup.sh'
+[64.917s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/yasric/senior_project/install/_local_setup_util_sh.py'
+[64.918s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/yasric/senior_project/install/setup.sh'
+[64.919s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/yasric/senior_project/install/local_setup.bash'
+[64.921s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/yasric/senior_project/install/setup.bash'
+[64.922s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/yasric/senior_project/install/local_setup.zsh'
+[64.923s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/yasric/senior_project/install/setup.zsh'

@@ -1,0 +1,1 @@
+/home/yasric/senior_project/build/obstacle_detector/ament_cmake_environment_hooks/local_setup.bash

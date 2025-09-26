@@ -1,0 +1,1 @@
+/home/yasric/senior_project/build/obstacle_detector/rosidl_generator_py/obstacle_detector/msg/_segment_obstacle_s.c
