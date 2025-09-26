@@ -1,3 +1,9 @@
+#ROS build artifacts
+build/
+install/
+log/
+
+
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
 *.jpg
 *.jpeg
