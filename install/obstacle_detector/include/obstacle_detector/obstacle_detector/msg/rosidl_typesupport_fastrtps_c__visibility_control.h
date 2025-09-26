@@ -1,1 +1,0 @@
-/home/yasric/senior_project/build/obstacle_detector/rosidl_typesupport_fastrtps_c/obstacle_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

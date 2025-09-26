@@ -1,1 +1,0 @@
-/home/yasric/senior_project/build/obstacle_detector/rosidl_generator_py/obstacle_detector/_obstacle_detector_s.ep.rosidl_typesupport_c.c

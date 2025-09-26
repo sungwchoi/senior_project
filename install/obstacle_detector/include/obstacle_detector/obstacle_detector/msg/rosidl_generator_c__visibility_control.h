@@ -1,1 +1,0 @@
-/home/yasric/senior_project/build/obstacle_detector/rosidl_generator_c/obstacle_detector/msg/rosidl_generator_c__visibility_control.h

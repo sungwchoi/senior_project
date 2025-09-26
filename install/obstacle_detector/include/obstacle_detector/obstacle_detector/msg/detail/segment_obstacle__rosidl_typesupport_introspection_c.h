@@ -1,1 +1,0 @@
-/home/yasric/senior_project/build/obstacle_detector/rosidl_typesupport_introspection_c/obstacle_detector/msg/detail/segment_obstacle__rosidl_typesupport_introspection_c.h

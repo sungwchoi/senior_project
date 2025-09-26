@@ -1,1 +1,0 @@
-/home/yasric/senior_project/src/obstacle_detector_2/launch/filter_and_detect.launch.py
