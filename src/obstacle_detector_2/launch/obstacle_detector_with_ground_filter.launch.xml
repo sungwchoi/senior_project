@@ -1,0 +1,55 @@
+<launch>
+  <!-- Ground filter node (Python 구현) -->
+  <node name="ground_filter" pkg="obstacle_detector" exec="ground_filter_node" output="screen">
+    <param name="input_topic" value="/velodyne_points"/> <!-- 원래는 /velodyne_points -->
+    <param name="output_topic" value="/velodyne_points_filtered"/>
+    <param name="z_min" value="0.1"/>       <!-- 최소 높이 (지면 제거) -->
+    <param name="z_max" value="1.25"/>      <!-- 최대 높이 (사람 다리 정도까지 남김) -->
+    <param name="voxel_size" value="0.05"/> <!-- 다운샘플링 -->
+  </node>
+
+  <!-- Obstacle Extractor -->
+  <node name="obstacle_extractor" pkg="obstacle_detector" exec="obstacle_extractor_node" output="screen">
+    <remap from="/pcl2" to="/velodyne_points_filtered"/>
+    
+    <param name="active"               value="true"/>
+    <param name="use_scan"             value="false"/>
+    <param name="use_pcl"              value="false"/>
+    <param name="use_pcl2"             value="true"/>
+    
+    <param name="use_split_and_merge"    value="true"/> 
+    <param name="circles_from_visibles"  value="true"/>
+    <param name="discard_converted_segments" value="true"/>
+    <param name="transform_coordinates"  value="true"/>
+    
+    <param name="min_group_points"     value="10"/> 
+    <param name="max_group_distance"   value="0.2"/> 
+    <param name="distance_proportion"  value="0.008"/> 
+    <param name="max_split_distance"   value="0.25"/>
+    <param name="max_merge_separation" value="0.25"/>
+    <param name="max_merge_spread"     value="0.25"/>
+    <param name="max_circle_radius"    value="0.5"/> 
+    <param name="radius_enlargement"   value="0.3"/> 
+
+    <param name="frame_id"             value="velodyne"/>
+  </node>
+  
+  <!-- Obstacle Tracker -->
+  <node name="obstacle_tracker" pkg="obstacle_detector" exec="obstacle_tracker_node" output="screen">
+    <remap from="/odom" to="/odometry/filtered"/>
+
+    <param name="active"                  value="true"/>
+    <param name="loop_rate"               value="100.0"/>
+    <param name="tracking_duration"       value="3.5"/> 
+    <param name="min_correspondence_cost" value="0.6"/>
+    <param name="std_correspondence_dev"  value="0.15"/>
+    <param name="process_variance"        value="0.1"/>  
+    <param name="process_rate_variance"   value="0.1"/>  
+    <param name="measurement_variance"    value="1.5"/>  
+
+    <param name="frame_id"             value="velodyne"/>
+
+    <remap from="tracked_obstacles" to="obstacles"/>
+    <remap from="tracked_obstacles_visualization" to="obstacles_visualization"/>
+  </node>
+</launch>
