@@ -23,6 +23,10 @@ python3 detect.py --weights yolov5n.pt --source 0
 python3 detect.py --weights best_v<version_number>.pt --source 0   
 ```
 
+![System diagram](assets/images/yolov5n.png)
+![System diagram](assets/images/weapon_1.png)
+![System diagram](assets/images/weapon_2.png)
+
 Obstacle_detector_2:
 
 ```bash 
@@ -37,6 +41,10 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build
 source ~/senior_project/install/setup.bash
 ```
+
+![System diagram](assets/images/rviz_near.png)
+![System diagram](assets/images/rviz_adjust.png)
+![System diagram](assets/images/rviz_ok.png)
 
 ## Documentation  
 --------------------
