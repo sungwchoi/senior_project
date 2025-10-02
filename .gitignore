@@ -7,14 +7,14 @@ log/
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
 *.jpg
 *.jpeg
-*.png
+#*.png
 *.bmp
 *.tif
 *.tiff
 *.heic
 *.JPG
 *.JPEG
-*.PNG
+#*.PNG
 *.BMP
 *.TIF
 *.TIFF
@@ -264,4 +264,4 @@ crashlytics-build.properties
 fabric.properties
 
 # --- allow project assets (override image ignores above)
-!senior_project/assets/**
+!assets/images/**
