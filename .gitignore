@@ -262,3 +262,6 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# --- allow project assets (override image ignores above)
+!senior_project/assets/**
