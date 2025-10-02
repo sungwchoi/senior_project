@@ -24,8 +24,8 @@ python3 detect.py --weights best_v<version_number>.pt --source 0
 ```
 
 ![System diagram](assets/images/yolov5n.png)
-![System diagram](assets/images/weapon_1.png)
-![System diagram](assets/images/weapon_2.png)
+![System diagram](assets/images/weapon_1.jpg)
+![System diagram](assets/images/weapon_2.jpg)
 
 Obstacle_detector_2:
 
