@@ -1,0 +1,14 @@
+robot_brain:
+  ros__parameters:
+    target_distance: 1.5         # m (원하는 추종 거리)
+    tol_ok: 0.2                  # m (OK 데드밴드)
+    tol_slow: 0.35               # m (가/감속 판단 여유)
+    sector_center: 3.14159       # rad, 뒤쪽(180도)
+    sector_width: 1.745          # rad, 약 100도 (±50도)
+    min_detect_radius: 0.3       # m (너무 가까운 잡음 무시)
+    max_detect_radius: 3.5       # m (transform의 max_range와 일치 권장)
+    ema_alpha: 0.35              # 지터 완화용 EMA 계수 (0~1)
+    max_age_sec: 0.8             # 타깃 유실 판단 시간
+    publish_rate_hz: 15.0
+    frame_id: "velodyne"         # Marker 용 기준 프레임
+    publish_markers: true        # RViz2 표시 (텍스트+점)
