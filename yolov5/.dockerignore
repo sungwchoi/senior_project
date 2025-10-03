@@ -134,15 +134,6 @@ ENV*/
 # mypy
 .mypy_cache/
 
-# YOLOv5 /Ultralytics outputs
-runs/
-runs/*
-__pycache__/
-outputs/
-outputs/*
-exp*/
-
-
 
 # https://github.com/github/gitignore/blob/master/Global/macOS.gitignore -----------------------------------------------
 
