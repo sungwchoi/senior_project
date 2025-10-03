@@ -23,9 +23,16 @@ python3 detect.py --weights yolov5n.pt --source 0
 python3 detect.py --weights best_v<version_number>.pt --source 0   
 ```
 
+
+
 ![System diagram](assets/images/yolov5n.png)
+
 ![System diagram](assets/images/weapon_1.jpg)
+
 ![System diagram](assets/images/weapon_2.jpg)
+
+
+
 
 Obstacle_detector_2:
 
@@ -42,9 +49,15 @@ colcon build
 source ~/senior_project/install/setup.bash
 ```
 
+
+
 ![System diagram](assets/images/rviz_near.png)
+
 ![System diagram](assets/images/rviz_adjust.png)
+
 ![System diagram](assets/images/rviz_ok.png)
+
+
 
 ## Documentation  
 --------------------
@@ -64,13 +77,27 @@ Inside the ~/senior_project
 python3 detect_v8.py
 ```
 
+
 Obstacle_detector_2:
 
 ```bash 
-ros2 launch obstacle_detector obstacle_extractor_and_tracker.launch 
+ros2 run robot_brain relay_qos
+
+ros2 launch obstacle_detector obstacle_extractor_and_tracker_2D.launch
 
 ros2 launch velodyne_driver velodyne_driver_node-VLP16-launch.py 
 
 ros2 launch velodyne_pointcloud velodyne_transform_node-VLP16-launch.py
+
+ros2 run robot_brain distance_keeper 
+
+rviz2 # Reliability Policy (Qos for scan 2D) : Realiable > Best Effort 
 ```
+
+
+VLP16 velodyne specification:
+
+Ip : 192.168.1.201 
+
+500 rpm, 320 ~ 40 (degree)
 
