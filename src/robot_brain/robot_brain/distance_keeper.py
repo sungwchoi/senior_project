@@ -392,6 +392,19 @@ class DistanceKeeper(Node):
 
         self.marker_pub.publish(arr)
 
+########################### 이거 추가본
+    def _clear_markers_once(self):
+    # 이전에 표시 중이었다가 이번에 없어졌을 때만 1회 호출하도록 사용
+        arr = MarkerArray()
+        m = Marker()
+        m.header.frame_id = self.frame_id
+        m.header.stamp = self.get_clock().now().to_msg()
+        m.ns = "dk_text"
+        m.id = 1
+        m.action = Marker.DELETE
+        arr.markers.append(m)
+        self.marker_pub.publish(arr)
+
     def _clear_markers(self):
         arr = MarkerArray()
         m = Marker()

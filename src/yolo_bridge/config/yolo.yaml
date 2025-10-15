@@ -1,0 +1,14 @@
+yolo_node:
+  ros__parameters:
+    weights: "/home/yasric/senior_project/third_party/yolov5n/best_v1.pt"
+    repo_path: "/home/yasric/senior_project/yolov5"   # 네가 보여준 경로 그대로
+    device: "cpu"                 # GPU면 "cuda:0"
+    img_size: 640
+    conf_thres: 0.25
+    iou_thres: 0.45
+    max_det: 100
+    stride: 1
+    source_topic: "/camera/image_raw"   # 카메라 토픽 이름에 맞춰 조정
+    publish_annotated: true
+    annotated_topic: "/robot/yolo/annotated"
+    detections_topic: "/robot/yolo/detections"
