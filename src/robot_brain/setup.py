@@ -23,7 +23,8 @@ setup(
     entry_points={
         'console_scripts': [
             'distance_keeper = robot_brain.distance_keeper:main',
-            'relay_qos = robot_brain.relay_qos:main'
+            'relay_qos = robot_brain.relay_qos:main',
+            'follow_signal_publisher = robot_brain.follow_signal_publisher:main',
         ],
     },
 )

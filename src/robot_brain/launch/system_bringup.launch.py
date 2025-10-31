@@ -1,5 +1,5 @@
 # system_bringup.launch.py
-# 한 번에: velodyne driver -> transform -> obstacle_detector -> relay_qos -> distance_keeper -> rviz2
+# velodyne driver -> transform -> obstacle_detector -> relay_qos -> distance_keeper -> rviz2
 # 충돌/초기화 순서를 줄이기 위해 TimerAction으로 순차 기동, respawn, 네임스페이스, 스위치 인자 제공
 
 import os
@@ -28,6 +28,15 @@ def generate_launch_description():
     enable_qos       = LaunchConfiguration('enable_qos')
     enable_keeper    = LaunchConfiguration('enable_keeper')
     enable_camera = LaunchConfiguration('enable_camera')
+    # ### NEW: follow_signal 관련 인자
+    enable_follow_signal = LaunchConfiguration('enable_follow_signal')
+    adjust_deadband      = LaunchConfiguration('adjust_deadband')
+    hysteresis           = LaunchConfiguration('hysteresis')
+    follow_serial_enable = LaunchConfiguration('follow_serial_enable')
+    follow_serial_port   = LaunchConfiguration('follow_serial_port')
+    follow_serial_baud   = LaunchConfiguration('follow_serial_baud')
+
+
 
     # Velodyne 네트워크/프레임 설정
     velodyne_frame   = LaunchConfiguration('velodyne_frame')
@@ -81,7 +90,7 @@ def generate_launch_description():
             'port': velodyne_port,
             'frame_id': velodyne_frame,
             'model': 'VLP16',
-            'rpm': 500.0,  # 네가 원하는 500 RPM
+            'rpm': 600.0, 
             'gps_time': False,
             'time_offset': 0.0,
             'enabled': True,
@@ -90,7 +99,7 @@ def generate_launch_description():
             'repeat_delay': 0.0,
             'timestamp_first_packet': False
         }],
-        #namespace=ns
+        
     )
 
 
@@ -107,9 +116,10 @@ def generate_launch_description():
                     'model': 'VLP16',
                     'calibration': vlp16_calib,
                     'frame_id': velodyne_frame,
-                    'use_sim_time': use_sim_time
+                    'use_sim_time': use_sim_time,
+                    'organize_cloud': False,          # ### OPT: 불필요한 정렬 비활성(CPU save)
                 }],
-            # relative 이름으로 고정 → PushRosNamespace('robot') 아래서 /robot 접두사 자동 부착
+            
                 remappings=[
                     ('velodyne_packets', '/robot/velodyne_packets'),
                     ('velodyne_points',  '/robot/velodyne_points'),
@@ -117,9 +127,6 @@ def generate_launch_description():
             )
         ]   
     )
-
-
-    
 
     pcl2scan = TimerAction(
         condition=IfCondition(LaunchConfiguration('enable_pcl2scan')),   # Velodyne 켜질 때만
@@ -134,16 +141,16 @@ def generate_launch_description():
                 # LaserScan을 어느 frame 기준으로 만들지.
                 # TF가 준비 안됐으면 velodyne_frame(=센서 프레임)으로 두는 게 가장 안전.
                     'target_frame': velodyne_frame,   # 'base_link'로 하고 싶으면 TF가 있어야 함
-                    'transform_tolerance': 0.01,
+                    'transform_tolerance': 0.03,
 
                 # Z-슬라이스: target_frame 좌표계에서 이 높이 구간의 포인트만 LaserScan에 반영
-                    'min_height': -0.50,   # 바닥 근처 노이즈 컷
-                    'max_height':  1.5,
+                    'min_height': -0.20,   # 바닥 근처 노이즈 컷
+                    'max_height':  1.25,
 
                 # 스캔 각도/해상도(라디안). 필요 시 조정.
                     'angle_min': -1.5708 ,
                     'angle_max':  1.5708,
-                    'angle_increment': 0.003,  # ≈0.17° (원하면 0.00436 ≈0.25°)
+                    'angle_increment': 0.00436,  # ≈0.17° (원하면 0.00436 ≈0.25°)
 
                     'range_min': 0.30,
                     'range_max': 2.75,
@@ -157,8 +164,6 @@ def generate_launch_description():
         ]
     )
 
-
-
     obstacle_extractor = TimerAction(
         condition=IfCondition(enable_detector),
         period=3.5,
@@ -168,7 +173,34 @@ def generate_launch_description():
                 executable='obstacle_extractor_node',
                 name='obstacle_extractor',
                 output='screen',
-                parameters=[{'use_sim_time': use_sim_time}],
+                parameters=[
+                    {'use_sim_time': use_sim_time},
+                # --- 아래 파라미터들을 전부 추가 ---
+                    {'active': True},
+                    {'use_scan': True},
+                    {'use_pcl': False},
+                    {'use_pcl2': False},
+                    
+                    {'use_split_and_merge': True},
+                    {'circles_from_visibles': True},
+                    {'discard_converted_segments': False},
+                    {'transform_coordinates': False},
+
+                    # --- 🌟 다리 감지를 위한 튜닝값 ---
+                    {'min_group_points': 4},         # 10 -> 4 (다리가 가늘어도 잡히도록)
+                    {'max_group_distance': 0.10},    # 0.08 -> 0.10 (조금 여유롭게)
+                    {'distance_proportion': 0.006},  # (XML 값)
+                    {'max_split_distance': 0.18},    # (XML 값)
+                    {'max_merge_separation': 0.20},  # (XML 값)
+                    {'max_merge_spread': 0.20},      # (XML 값)
+                    
+                    # --- 🌟 distance_keeper와 범위를 맞춤 ---
+                    {'min_circle_radius': 0.04},     # (신규 추가, 5cm 근처)
+                    {'max_circle_radius': 0.20},     # 0.3 -> 0.20 (18cm 근처)
+                    
+                    {'radius_enlargement': 0.10},    # 0.15 -> 0.10
+                    {'frame_id': velodyne_frame}
+                ],                
             # 입력 LaserScan만 정확히 리맵
                 remappings=[('scan', '/robot/scan_reliable'),
                             ('obstacles', '/robot/obstacles_raw')]
@@ -205,7 +237,6 @@ def generate_launch_description():
         ]
     )
 
-
     yolo_detector = TimerAction(
         condition=IfCondition(enable_yolo_detector),
         period=1.5,
@@ -217,10 +248,8 @@ def generate_launch_description():
             )
         ]
     )
-
-
     # ----- robot_brain: relay_qos -----
-    # 토픽 QoS 릴레이. 센서/처리체인 연결 이슈 있을 때 유용. 죽으면 재시작.
+    
     relay_qos = Node(
         condition=IfCondition(enable_qos),
         package='robot_brain',
@@ -231,7 +260,7 @@ def generate_launch_description():
         respawn_delay=2.0,
         parameters=[{
             'use_sim_time': use_sim_time,
-            'in_topic':  'scan',           # 절대 토픽으로 지정해도 OK
+            'in_topic':  'scan',           
             'out_topic': 'scan_reliable',
         
         }],
@@ -239,7 +268,7 @@ def generate_launch_description():
     )
 
     # ----- robot_brain: distance_keeper -----
-    # 네 패키지의 config/distance_keeper.yaml을 로드 (필요 시 파라미터 키 확인)
+    
     distance_keeper = Node(
         condition=IfCondition(enable_keeper),
         package='robot_brain',
@@ -248,16 +277,11 @@ def generate_launch_description():
         output='screen',
         respawn=True,
         respawn_delay=2.0,
-        # ▼▼▼ 실제 파라미터 파일 경로 맞추기 ▼▼▼
+        
         parameters=[
             {'use_sim_time': use_sim_time},
-            PathJoinSubstitution([FindPackageShare('robot_brain'), 'config', 'distance_keeper.yaml'])
-            # /opt/… 가 아니라 워크스페이스 빌드 후 share에서 참조하려면 FindPackageShare 사용 권장
-            # 여기서는 개발 편의상 상대경로/절대경로 모두 허용. 문제 시 아래 두 줄 중 하나 선택:
-            # Path 1) 설치 경로 참조:
-            # PathJoinSubstitution([FindPackageShare('robot_brain'), 'config', 'distance_keeper.yaml']),
-            # Path 2) 소스 트리 절대경로 직접 지정(예시):
-            # '/home/…/senior_project/src/robot_brain/config/distance_keeper.yaml'
+            #PathJoinSubstitution([FindPackageShare('robot_brain'), 'config', 'distance_keeper.yaml'])
+        
         ],
         remappings=[
             ('/obstacles','/robot/obstacles'), 
@@ -265,6 +289,28 @@ def generate_launch_description():
             ('/range_error','/robot/range_error'),
             ('/distance_markers','/robot/distance_markers'),
         ],
+    )
+
+    # ### NEW: robot_brain: follow_signal_publisher
+    follow_signal = Node(
+        condition=IfCondition(enable_follow_signal),
+        package='robot_brain',
+        executable='follow_signal_publisher',
+        name='follow_signal_publisher',
+        output='screen',
+        parameters=[{
+            'in_topic': '/robot/range_error',          # distance_keeper 출력
+            'forward_topic': '/robot/cmd_forward',
+            'backward_topic': '/robot/cmd_backward',
+            'state_topic': '/robot/range_state',
+            'adjust_deadband': adjust_deadband,
+            'hysteresis': hysteresis,
+            'enable_serial': follow_serial_enable,
+            'serial_port': follow_serial_port,
+            'serial_baud': follow_serial_baud,
+            'serial_on_change_only': True,
+            'serial_min_period': 0.4
+        }]
     )
 
     # ----- RViz2 -----
@@ -293,9 +339,6 @@ def generate_launch_description():
     # ----- 네임스페이스로 묶기 (멀티로봇 대비/토픽 충돌 회피) -----
     group = GroupAction([
         PushRosNamespace(ns),
-
-        #SetRemap(src='velodyne_points', dst='velodyne_points'),
-
         static_map_base,
         static_tf_velodyne,
         velodyne_driver,
@@ -303,16 +346,14 @@ def generate_launch_description():
         pcl2scan,
         obstacle_extractor,
         obstacle_tracker,
-        #camera_node,
-        yolo_detector, 
-        #obstacle_detector,
+        yolo_detector,
         relay_qos,
         distance_keeper,
+        follow_signal,
         rviz2
     ])
 
     
-
     return LaunchDescription([
         # 보기 좋게 컬러 로그
         SetEnvironmentVariable('RCUTILS_COLORIZED_OUTPUT', '1'),
@@ -349,6 +390,15 @@ def generate_launch_description():
         DeclareLaunchArgument('velodyne_frame', default_value='velodyne'),
         DeclareLaunchArgument('velodyne_ip',    default_value='192.168.1.201'),  # ← 네 라이다 IP로 수정
         DeclareLaunchArgument('velodyne_port',  default_value='2368'),
+
+        # ### NEW: follow_signal 인자
+        DeclareLaunchArgument('enable_follow_signal', default_value='true', description='Enable follow signal publisher'),
+        DeclareLaunchArgument('adjust_deadband', default_value='0.30', description='± deadband (m)'),
+        DeclareLaunchArgument('hysteresis', default_value='0.05', description='hysteresis (m)'),
+        DeclareLaunchArgument('follow_serial_enable', default_value='false', description='Enable USB serial to Arduino'),
+        DeclareLaunchArgument('follow_serial_port', default_value='/dev/ttyACM0', description='Arduino serial port (or /dev/arduino_follow)'),
+        DeclareLaunchArgument('follow_serial_baud', default_value='115200', description='Arduino serial baud'),
+
 
         camera_node,
         group
