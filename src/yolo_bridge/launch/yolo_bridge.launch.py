@@ -14,6 +14,7 @@ def generate_launch_description():
         " -p subscribe_image:=/camera/image_raw"
         " -p publish_overlay:=/yolo/image"
         " -p publish_boxes:=/yolo/boxes"
+        " -p yolo_weapon_labels:='weapons,weapon,gun,pistol,rifle,knife'" # 여기 추가한 부분
         " -r image:=/camera/image_raw"
     )
     return LaunchDescription([

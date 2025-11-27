@@ -71,6 +71,7 @@ def generate_launch_description():
     ])
 
     static_map_base = Node(
+        #package='launchtf2_ros',
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_map_base_link',
@@ -101,7 +102,6 @@ def generate_launch_description():
         }],
         
     )
-
 
     velodyne_transform = TimerAction(
         condition=IfCondition(enable_velodyne),
@@ -248,8 +248,7 @@ def generate_launch_description():
             )
         ]
     )
-    # ----- robot_brain: relay_qos -----
-    
+    # ----- robot_brain: relay_qos -----Bus 001 Device 024: ID 1871:0d01 Aveo Technology Corp. USB2.0 Camera
     relay_qos = Node(
         condition=IfCondition(enable_qos),
         package='robot_brain',
@@ -266,9 +265,7 @@ def generate_launch_description():
         }],
         #remappings=[]
     )
-
     # ----- robot_brain: distance_keeper -----
-    
     distance_keeper = Node(
         condition=IfCondition(enable_keeper),
         package='robot_brain',
@@ -290,7 +287,6 @@ def generate_launch_description():
             ('/distance_markers','/robot/distance_markers'),
         ],
     )
-
     # ### NEW: robot_brain: follow_signal_publisher
     follow_signal = Node(
         condition=IfCondition(enable_follow_signal),
@@ -312,7 +308,6 @@ def generate_launch_description():
             'serial_min_period': 0.4
         }]
     )
-
     # ----- RViz2 -----
     rviz2 = Node(
         condition=IfCondition(use_rviz),
@@ -336,6 +331,40 @@ def generate_launch_description():
         output='screen'
     )
 
+    joy_node = Node(
+        condition=IfCondition(LaunchConfiguration('enable_joystick')),
+        package='joy',
+        executable='joy_node',
+        name='joy_node',
+        parameters=[{'dev': LaunchConfiguration('joy_dev'), 'deadzone': 0.05, 'autorepeat_rate': 20.0}]
+    )
+    
+    joy_to_serial = Node(
+        condition=IfCondition(LaunchConfiguration('enable_joystick')),
+        package='robot_brain',
+        executable='joy_to_serial',  # setup.py에서 console_script로 등록했거나, python script path 사용
+        name='joy_to_serial',
+        output='screen',
+        parameters=[{
+            'joy_topic': 'joy',
+            'axis_x': LaunchConfiguration('joy_axis_x'),
+            'axis_y': LaunchConfiguration('joy_axis_y'),
+            'hat_x': LaunchConfiguration('joy_hat_x'),
+            'hat_y': LaunchConfiguration('joy_hat_y'),
+            'deadzone': LaunchConfiguration('joy_deadzone'),
+            'prefer_hat': LaunchConfiguration('joy_prefer_hat'),
+            'port': LaunchConfiguration('joystick_serial_port'),
+            'baud': LaunchConfiguration('joystick_serial_baud'),
+            'payload_mode': LaunchConfiguration('joystick_payload_mode'),
+            'on_change_only': True,
+            'min_period': 0.15,
+
+            'invert_x': LaunchConfiguration('joy_invert_x'),
+            'invert_y': LaunchConfiguration('joy_invert_y'),
+        }]
+    )
+
+
     # ----- 네임스페이스로 묶기 (멀티로봇 대비/토픽 충돌 회피) -----
     group = GroupAction([
         PushRosNamespace(ns),
@@ -350,6 +379,8 @@ def generate_launch_description():
         relay_qos,
         distance_keeper,
         follow_signal,
+        joy_node,
+        joy_to_serial,
         rviz2
     ])
 
@@ -363,7 +394,7 @@ def generate_launch_description():
         DeclareLaunchArgument('namespace', default_value='robot', description='ROS namespace'),
         DeclareLaunchArgument('use_sim_time', default_value='false'),
         DeclareLaunchArgument('use_rviz', default_value='true'),
-
+# generate_launch_description
         DeclareLaunchArgument('base_frame', 
                             default_value='base_link',
                             description='Parent frame for velodyne'),
@@ -398,6 +429,21 @@ def generate_launch_description():
         DeclareLaunchArgument('follow_serial_enable', default_value='false', description='Enable USB serial to Arduino'),
         DeclareLaunchArgument('follow_serial_port', default_value='/dev/ttyACM0', description='Arduino serial port (or /dev/arduino_follow)'),
         DeclareLaunchArgument('follow_serial_baud', default_value='115200', description='Arduino serial baud'),
+
+        # NEW: Joystick 신호확인
+        DeclareLaunchArgument('enable_joystick', default_value='true'),
+        DeclareLaunchArgument('joy_dev', default_value='/dev/input/js0'),
+        DeclareLaunchArgument('joystick_serial_port', default_value='/dev/ttyACM0'),
+        DeclareLaunchArgument('joystick_serial_baud', default_value='115200'),
+        DeclareLaunchArgument('joystick_payload_mode', default_value='char'),  # 'char'|'word'|'both'
+        DeclareLaunchArgument('joy_axis_x', default_value='0'),
+        DeclareLaunchArgument('joy_axis_y', default_value='1'),
+        DeclareLaunchArgument('joy_hat_x',  default_value='6'),
+        DeclareLaunchArgument('joy_hat_y',  default_value='7'),
+        DeclareLaunchArgument('joy_deadzone', default_value='0.4'),
+        DeclareLaunchArgument('joy_prefer_hat', default_value='true'),
+        DeclareLaunchArgument('joy_invert_x', default_value='false'),
+        DeclareLaunchArgument('joy_invert_y', default_value='false'),
 
 
         camera_node,

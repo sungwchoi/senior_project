@@ -25,6 +25,7 @@ setup(
             'distance_keeper = robot_brain.distance_keeper:main',
             'relay_qos = robot_brain.relay_qos:main',
             'follow_signal_publisher = robot_brain.follow_signal_publisher:main',
+            'joy_to_serial = robot_brain.joy_to_serial:main'
         ],
     },
 )
